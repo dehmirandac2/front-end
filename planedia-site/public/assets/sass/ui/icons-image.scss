@@ -1,0 +1,121 @@
+@import "base/mixins";
+@import "base/variables";
+
+.ico-select {
+	background: #eaeae9;
+	border-radius: 3px;
+	float: left;
+	width: 20%;
+	margin: 1% 2.5% 1.5% 2.5%;
+
+	[class^="ico-"] {
+		display: block;
+		margin: 30px auto;
+		width: 65px;
+		height: 48px;
+	}
+
+	.name-ico {
+		padding: 10px;
+		background: $button_primary;
+		width: 100%;
+		display: block;
+		font-size: 12px;
+		text-align: center;
+		color: #FFF;
+		border-radius: 0 0 3px 3px;
+	}
+
+	&:hover, &.active {
+		.name-ico {
+			background: $color_green;
+		}
+
+		.ico-single {
+			background: sprite($icon-sprite, single_2) no-repeat;
+		}
+
+		.ico-couple {
+			background: sprite($icon-sprite, couple_2) no-repeat;
+		}
+		.ico-group {
+			background: sprite($icon-sprite, group_2) no-repeat;
+		}
+
+		.ico-adventure {
+			background: sprite($icon-sprite, adventure_2) no-repeat;
+		}
+
+		.ico-beach {
+			background: sprite($icon-sprite, beach_2) no-repeat;
+		}
+
+		.ico-city {
+			background: sprite($icon-sprite, city_2) no-repeat;
+		}
+
+		.ico-family {
+			background: sprite($icon-sprite, family_2) no-repeat;
+		}
+
+		.ico-gay-friend {
+			background: sprite($icon-sprite, gayfriend_2) no-repeat;
+		}
+
+		.ico-luxury {
+			background: sprite($icon-sprite, luxury_2) no-repeat;
+		}
+
+		.ico-night {
+			background: sprite($icon-sprite, night_2) no-repeat;
+		}
+
+		.ico-work {
+			background: sprite($icon-sprite, work_2) no-repeat;
+		}
+	}
+
+	.ico-single {
+		background: sprite($icon-sprite, single_1) no-repeat;
+	}
+
+	.ico-couple {
+		background: sprite($icon-sprite, couple_1) no-repeat;
+	}
+
+	.ico-group {
+		background: sprite($icon-sprite, group_1) no-repeat;
+	}
+
+	.ico-adventure {
+		background: sprite($icon-sprite, adventure_1) no-repeat;
+	}
+
+	.ico-beach {
+		background: sprite($icon-sprite, beach_1) no-repeat;
+	}
+
+	.ico-city {
+		background: sprite($icon-sprite, city_1) no-repeat;
+	}
+
+	.ico-family {
+		background: sprite($icon-sprite, family_1) no-repeat;
+	}
+
+	.ico-gay-friend {
+		background: sprite($icon-sprite, gayfriend_1) no-repeat;
+	}
+
+	.ico-luxury {
+		background: sprite($icon-sprite, luxury_1) no-repeat;
+	}
+
+	.ico-night {
+		background: sprite($icon-sprite, night_1) no-repeat;
+	}
+
+	.ico-work {
+		background: sprite($icon-sprite, work_1) no-repeat;
+	}
+}

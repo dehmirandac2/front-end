@@ -1,0 +1,98 @@
+@import "base/mixins";
+@import "base/variables";
+
+.btn {
+	border-radius: 3px;
+	font-size: em(14px);
+	line-height: 1.5em;
+	background: $button_background;
+	color: $color_white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	position: relative;
+
+	&:hover {
+		background: $hover_button;
+	}
+
+	&.primary {
+		background: $button_primary;
+
+		&:hover {
+			background: $hover_button_primary;
+		}
+	}
+
+	&.cancel {
+		background: $button_cancel;
+		color: $button_color;
+
+		&:hover {
+			background: $button_cancel_hover;
+		}
+	}
+
+	&.skip {
+		background: $button_cancel;
+		color: $button_color;
+
+		&:hover {
+			background: $button_cancel_hover;
+		}
+	}
+
+	&.large {
+		display: block;
+	}
+
+	.ico-more {
+		float: right;
+		font-weight: 800;
+	}
+
+	&.sing-up {
+		background: $button_sing_up;
+		padding: em(5px) em(15px) em(5px) em(5px);
+
+		.fa {
+			font-size: em(16px);
+			padding: em(0) em(10px);
+		}
+
+		&:hover {
+			background: $button_sing_up_hover;
+		}
+	}
+
+	&.wishlist {
+		background: $color_pink;
+		color: #FFF;
+	}
+
+	&.checked {
+		opacity: .5;
+		cursor: auto;
+	}
+
+	&.ancora-top {
+		width: 40px;
+		height: 40px;
+		position: fixed;
+		font-size: 20px;
+		text-align: center;
+		right: 10px;
+		bottom: 65px;
+		border-radius: 50%;
+		color: #FFF;
+		background: $button_primary;
+		display: none;
+		line-height: 100%;
+		padding: 10px 0;
+	}
+
+	&.small {
+		padding: 5px 10px !important;
+		font-size: em(12px) !important;
+	}
+}

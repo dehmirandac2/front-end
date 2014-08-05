@@ -1,0 +1,603 @@
+@import "base/mixins";
+@import "base/variables";
+
+/***************************************************************************
+	TIMLINE
+	**************************************************/
+.timeline {
+	width: 20%;
+	height: 100%;
+	padding: 20px;
+	background: $bg_timeline;
+	color: $color_white;
+	font-size: em(14px);
+	font-weight: 400;
+	position: fixed;
+	left: 0px;
+	z-index: 9998;
+	overflow: hidden;
+	padding-bottom: 100px;
+
+	&.timeline-empty {
+		background: #f5f5f5;
+
+		.balloon {
+			background: sprite($icon-sprite, balloon) no-repeat;
+			width: 104px;
+			height: 137px;
+			display: block;
+			margin: 90px auto;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-weight: bold;
+			font-size: em(18px);
+			color: #0a0a0a;
+			text-align: center;
+			margin-bottom: 0px;
+		}
+
+		.btn {
+			font-size: em(16px) !important;
+			margin-top: 10px;
+		}
+	}
+
+	.edit-name-timeline {
+		position: absolute;
+		left: 20px;
+		top: 25px;
+
+		&.check {
+			display: none;
+		}
+	}
+
+	.input-name {
+		display: none;
+	}
+
+	.header-timeline {
+		background: $blue_marin;
+		padding: 15px 20px;
+		margin: -20px -20px 50px;
+		position: fixed;
+		width: 20%;
+		height: 60px;
+		z-index: 9998;
+
+		p {
+			margin-bottom: 0px;
+			font-size: em(16px);
+			padding-left: 20px;
+		}
+
+		input[type="text"] {
+			@include border-radius(5px);
+			font-size: em(16px);
+			height: 30px;
+			padding: 0em 0 0em .5em;
+			background: #095a66;
+			color: #FFF;
+			border: none;
+			width: 90%;
+			margin-left: 20px;
+
+			&.bg-none {
+				background: none;
+			}
+
+			&.date-trip {
+				width: 11%;
+				background: sprite($icon-sprite, date-timeline) no-repeat;
+				margin-left: 5px;
+				cursor: pointer;
+				color: transparent;
+				position: absolute;
+				right: 40px;
+				top: 16px;
+			}
+		}
+
+		.btn {
+			font-size: em(12px);
+			margin: 15px 0 -5px 0;
+			padding: em(10px) em(10px);
+		}
+
+		&:after {
+			top: 100%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(5, 54, 61, 0);
+			border-top-color: $blue_marin;
+			border-width: 13px;
+			left: 50%;
+			margin-left: -15px;
+		}
+	}
+
+	.btn {
+		font-size: em(12px);
+		display: block;
+		margin-bottom: .5em;
+		cursor: pointer;
+	}
+
+	.settings-timeline {
+		position: absolute;
+		right: 20px;
+		top: 23px;
+		background: sprite($icon-sprite, settings) no-repeat;
+		width: 16px;
+		height: 16px;
+		cursor: pointer;
+	}
+
+	.remove-item {
+		position: absolute;
+		right: 0px;
+		top: 8px;
+		width: 10px;
+		height: 10px;
+		cursor: pointer;
+		display: none;
+		font-size: 13px;
+		z-index: 9;
+
+		.fa-trash-o {
+			color: $blue_clear;
+		}
+	}
+
+	.insert-nota {
+		position: absolute;
+		right: 20px;
+		top: 8px;
+		width: 10px;
+		height: 10px;
+		cursor: pointer;
+		display: none;
+		font-size: 13px;
+		z-index: 9;
+
+		.fa-pencil-square-o {
+			color: $blue_clear;
+		}
+	}
+
+	.list-citys {
+		position: relative;
+	}
+
+
+	::-moz-placeholder {  /* Firefox 19+ */
+   		color: $color_white;
+	}
+
+	::-webkit-input-placeholder {
+	   color: $color_white;
+	}
+
+	:-ms-input-placeholder {
+	   color: $color_white;
+	}
+
+
+	.step1 {
+		margin-left: 28px;
+		height: 15px;
+
+		.btn {
+			margin-top: -10px;
+		}
+	}
+
+	#step-one {
+		top: 155px !important;
+	}
+
+}
+
+// Listagem dos pontos das viagens,
+.content-timeline {
+	margin-top: 90px;
+	padding-top: 20px;
+	background: url('../images/icos/ico-item-content.png') 7px 0 repeat-y;
+
+	.item-content {
+		margin-bottom: 15px;
+		position: relative;
+		padding: 0px 0 35px 28px;
+
+		&.last-item {
+			margin-top: -25px;
+			padding-bottom: 0;
+			height: 15px;
+
+			.btn {
+				margin-top: -10px;
+			}
+		}
+
+		&.editable {
+
+			&:hover {
+				cursor: ns-resize;
+
+				.remove-item {
+					display: block;
+				}
+
+				.insert-nota {
+					display: block;
+				}
+
+				&:after {
+					position: absolute;
+					width: 15px;
+					height: 13px;
+					display: block;
+					top: 4px;
+					left: -20px;
+					content: "";
+					background: url('../images/icos/ico-sort.png') no-repeat;
+				}
+			}
+		}
+
+	}
+
+	.ver-mais {
+		text-align: center;
+		display: block;
+		margin: 15px 0 0px;
+		color: #333;
+		font-size: em(14px);
+		text-decoration: underline;
+	}
+
+	.ico-flight,
+	.ico-bus,
+	.ico-car,
+	.ico-bus,
+	.ico-train {
+		display: inline-block;
+		margin: -2px 5px;
+		width: 15px;
+		height: 15px;
+	}
+
+	.ico-flight {
+		background: sprite($icon-sprite, flight) no-repeat;
+	}
+
+	.ico-car {
+		background: sprite($icon-sprite, car) no-repeat;
+	}
+
+	.ico-bus {
+		background: sprite($icon-sprite, bus) no-repeat;
+	}
+
+	.ico-train {
+		background: sprite($icon-sprite, train) no-repeat;
+	}
+
+	.sub-content-timeline {
+		margin: 0 0 20px 0;
+
+		li {
+			list-style: disc;
+			margin: 0 0 10px -4px;
+			padding: 5px 15px 5px 7px;
+			position: relative;
+			border: none;
+
+			a {
+				color: #FFF;
+			}
+		}
+
+		.btn {
+			margin: 15px 0 -10px 0;
+		}
+	}
+
+	.content-transports {
+		margin: 20px 0 20px 0;
+
+		input {
+			text-transform: uppercase;
+		}
+
+
+		.btn {
+			margin: 15px 0 10px 0;
+		}
+	}
+}
+
+
+
+
+// Config
+.tooltip-settings {
+	left: 10.5% !important;
+	top: 95px !important;
+	width: 135px;
+	display: none;
+	text-align: right !important;
+	position: fixed !important;
+
+	a {
+		display: block;
+		margin: 0 0 em(10px) 0;
+		color: $colorText;
+	}
+
+	&.top:after, &.top:before {
+		left: 80% !important;
+	}
+}
+
+
+.tooltip-timeline {
+
+	.tooltip {
+		max-width: 235px;
+	}
+
+	.error {
+		color: #C93131;
+		font-size: 12px;
+		margin-top: -12px;
+		width: 90%;
+		text-align: center;
+	}
+
+	.suggestions {
+		margin-bottom: 0px;
+
+		&.title {
+			font-size: em(15px);
+		}
+	}
+}
+
+.content-ballon {
+	&.fixed {
+		position: fixed;
+		left: 10px;
+		width: 17%;
+	}
+}
+
+
+.add-new-place {
+	margin-top: 50px;
+}
+
+.item-place {
+	position: inherit !important;
+}
+
+
+.last-button {
+	margin-bottom: em(30px) !important;
+}
+
+// name timeline
+.tooltip-name-timeline {
+	width: 260px;
+	padding: 7px 8px 8px 0 !important;
+
+	&:before, &:after {
+		left: 25% !important;
+	}
+}
+
+// Configuracoes
+.show-settings-timeline {
+	display: none;
+	margin-top: -5px;
+}
+
+// date
+.date-timeline {
+	position: absolute;
+	left: 78%;
+	top: 39%;
+	color: $blue_clear;
+	cursor: pointer;
+}
+
+.add-date-timeline {
+	left: 18%;
+	top: 55px;
+	position: fixed !important;
+
+	&.left {
+		&:before, &:after {
+			top: 8% !important;
+		}
+	}
+
+	.ui-datepicker {
+		border: none;
+	}
+
+	input[type="text"] {
+		width: 20% !important;
+		text-align: center;
+
+		&.disabled {
+			background: none;
+			border: none;
+		}
+	}
+
+	.title {
+		font-weight: 600;
+		font-size: 14px;
+
+		span {
+			font-weight: 300;
+			display: block;
+			font-size: 12px;
+		}
+	}
+
+	.box-timeline-date {
+		border-bottom: 1px solid #ECECEC;
+		margin: 0 -20px;
+		padding: 0 20px;
+	}
+
+	.not-date-trip {
+		font-size: 14px;
+		margin: 15px 0 0;
+	}
+}
+
+
+// tooltip transport
+.list-transport {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+
+.tooltip-timeline-details {
+	.tooltip {
+		&.bottom {
+			bottom: 35px !important;
+		}
+
+		&:after, &:before {
+			left: 25% !important;
+		}
+
+		.title-tooltip {
+			margin-bottom: 10px;
+			text-transform: initial;
+		}
+
+		p {
+			font-size: em(15px);
+			font-weight: 700;
+			text-transform: normal;
+			margin-bottom: 3px;
+			text-transform: initial;
+
+			span {
+				font-weight: 400;
+				font-size: em(14px);
+				margin-left: 5px;
+
+				&.no-inline {
+					display: block;
+					margin-left: 0px;
+					color: $colorText;
+				}
+			}
+		}
+	}
+}
+
+.more-info-point {
+	left: 85%;
+	width: 360px;
+	height: 103px;
+	top: -40px;
+
+	img {
+		max-width: 135px;
+		margin: -15px  0  0 -15px;
+		border-radius: 3px 0px 0px 3px;
+		position: relative;
+		z-index: 9;
+		float: left;
+	}
+
+	.content-more-info {
+		float: left;
+		margin-left: 10px;
+		max-width: 195px;
+	}
+
+	.title {
+		display: block;
+		font-size: em(15px);
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-size: 12px;
+		height: 55px;
+		overflow: hidden !important;
+	}
+
+	// &:after, &:before {
+	// 	top: 43% !important;
+	// }
+}
+
+
+
+// Timeline Publica
+.public-timeline {
+	position: relative;
+	
+	&:after {
+		background: url('../images/icos/ico-title-place.png') left top no-repeat;
+		margin: 0px 0 0px -1px;
+		position: absolute;
+		bottom: 0px;
+		content: "";
+		display: block;
+		height: 20px;
+		width: 20px;
+	}
+
+	.item-content {
+		padding-bottom: 20px;
+	}
+}
+
+.ico-type-point {
+	margin-right: 5px;
+	font-size: 11px;
+
+	&.ico-type-bad {
+		font-size: 14px;
+	}
+}
+
+
+// Titulos principais do place
+.title-place {
+	font-size: 16px;
+	font-weight: 600;
+	background: url('../images/icos/ico-title-place.png') left top no-repeat;
+	margin: -20px 0 10px -29px;
+	padding: 2px 0 2px 30px;
+
+	a {
+		color: #FFF;
+	}
+}
+
+.title-coutry {
+	font-size: em(12px);
+	color: #05363d;
+	position: absolute;
+	top: -10px;
+	left: 30px;
+}

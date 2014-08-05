@@ -1,0 +1,26 @@
+//Replacement imagem
+@mixin image_replacement {
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	display: block;
+}
+
+// Border Radius
+@mixin border-radius( $radius ) {
+	border-radius: $radius;
+	-ms-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+// Pixel for em
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function em($value, $base-value: $default_font_size)  {
+  $value: strip-unit($value) / strip-unit($base-value) * 1em;
+  @if ($value == 0em) { $value: 0; } // Turn 0em into 0
+  @return $value;
+}

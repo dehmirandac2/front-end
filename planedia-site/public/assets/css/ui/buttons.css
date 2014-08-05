@@ -1,0 +1,96 @@
+/* line 4, ../../sass/ui/buttons.scss */
+.btn {
+  border-radius: 3px;
+  font-size: 0.875em;
+  line-height: 1.5em;
+  background: #91c931;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+}
+/* line 15, ../../sass/ui/buttons.scss */
+.btn:hover {
+  background: #84b62d;
+}
+/* line 19, ../../sass/ui/buttons.scss */
+.btn.primary {
+  background: #29a1b2;
+}
+/* line 22, ../../sass/ui/buttons.scss */
+.btn.primary:hover {
+  background: #248e9d;
+}
+/* line 27, ../../sass/ui/buttons.scss */
+.btn.cancel {
+  background: #dddddd;
+  color: #777777;
+}
+/* line 31, ../../sass/ui/buttons.scss */
+.btn.cancel:hover {
+  background: #cdcccc;
+}
+/* line 36, ../../sass/ui/buttons.scss */
+.btn.skip {
+  background: #dddddd;
+  color: #777777;
+}
+/* line 40, ../../sass/ui/buttons.scss */
+.btn.skip:hover {
+  background: #cdcccc;
+}
+/* line 45, ../../sass/ui/buttons.scss */
+.btn.large {
+  display: block;
+}
+/* line 49, ../../sass/ui/buttons.scss */
+.btn .ico-more {
+  float: right;
+  font-weight: 800;
+}
+/* line 54, ../../sass/ui/buttons.scss */
+.btn.sing-up {
+  background: #3a589b;
+  padding: 0.3125em 0.9375em 0.3125em 0.3125em;
+}
+/* line 58, ../../sass/ui/buttons.scss */
+.btn.sing-up .fa {
+  font-size: 1em;
+  padding: 0 0.625em;
+}
+/* line 63, ../../sass/ui/buttons.scss */
+.btn.sing-up:hover {
+  background: #2a4787;
+}
+/* line 68, ../../sass/ui/buttons.scss */
+.btn.wishlist {
+  background: #d7267d;
+  color: #FFF;
+}
+/* line 73, ../../sass/ui/buttons.scss */
+.btn.checked {
+  opacity: .5;
+  cursor: auto;
+}
+/* line 78, ../../sass/ui/buttons.scss */
+.btn.ancora-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  font-size: 20px;
+  text-align: center;
+  right: 10px;
+  bottom: 65px;
+  border-radius: 50%;
+  color: #FFF;
+  background: #29a1b2;
+  display: none;
+  line-height: 100%;
+  padding: 10px 0;
+}
+/* line 94, ../../sass/ui/buttons.scss */
+.btn.small {
+  padding: 5px 10px !important;
+  font-size: 0.75em !important;
+}

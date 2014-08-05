@@ -1,0 +1,522 @@
+@import "base/mixins";
+@import "base/variables";
+@import "compass/css3";
+
+/***************************************************************************
+	RESET
+	**************************************************/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide {
+  display: none !important;
+}
+
+ng\:form {
+  display: block;
+}
+
+/***************************************************************************
+	REGRAS GERAIS
+	**************************************************/
+html, body {
+	// height: 100%;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-size: $default_font_size;
+	color: $colorText;
+	height: 100%;
+	min-width: 1080px;
+}
+
+.fleft { float: left !important; }
+.fright { float: right !important; }
+.block { display: block !important; }
+.left-0 { margin-left: 0 !important; }
+.no-margin { margin: 0 !important; }
+
+/***************************************************************************
+	HEADER
+	**************************************************/
+.planedia-logo {
+	background: sprite($icon-sprite, planedia-header) no-repeat;
+	width: 161px;
+	height: 51px;
+	float: left;
+	@include image_replacement;
+}
+
+.header {
+	background: $blue_marin;
+	width: 100%;
+	height: 51px;
+	position: fixed;
+	z-index: 9999;
+	top: 0px;
+	left: 0;
+
+	a {
+		color: $color_white
+	}
+
+	.sing-up {
+		float: right;
+		margin: em(10px) em(30px) em(10px) 30px;
+	}
+}
+
+.search-places {
+	float: left;
+	width: 33%;
+
+	input[type="text"] {
+		@include border-radius(5px);
+		font-size: em(14px);
+		height: 30px;
+		padding: 0 1em;
+		background: #1f2c39;
+		color: #289daf;
+		border: none;
+		width: 87%;
+		float: left;
+		margin: 12px 15px;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: #289daf;
+	}
+
+	::-webkit-input-placeholder {
+	   color: #289daf;
+	}
+
+	:-ms-input-placeholder {
+	   color: #289daf;
+	}
+}
+
+.landing {
+	.search-places {
+		display: none;
+	}
+}
+
+/***************************************************************************
+	NAV
+	**************************************************/
+.nav {
+	font-size: em(20px);
+	font-weight: 200;
+	float: left;
+	overflow: hidden;
+	margin: 10px 0;
+
+	li {
+		display: inline-block;
+		float: left;
+
+		a {
+			font-size: $default_font_size;
+			line-height: 1.5em;
+			padding: em(0px) em(10px) em(5px) em(15px);
+			background: url('../images/icos/separator-nav.png') left no-repeat;
+                        line-height: 31px;
+		}
+	}
+        
+        .world-cup-2014 a{
+            background: url('../images/wc-icon.png') left no-repeat;
+            padding-left: 37px;
+            line-height: 31px;
+        }
+
+	.show-my-trips {
+		width: 400px;
+		height: 385px !important;
+		padding: 10px 0px 0;
+
+		.content-my-trips {
+			overflow-y: scroll;
+			height: 365px !important;
+		}
+
+		li {
+			margin-bottom: 10px;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 6px;
+
+			img {
+				width: 100%;
+			}
+
+			p {
+				margin-bottom: 0px;
+
+				&.description {
+					width: 250px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					font-size: em(12px);
+				}
+			}
+
+			a {
+				color: $blue_clear;
+				line-height: 1.5em;
+				padding: 0px;
+				background: none !important;
+
+				&.view-on-map-link {
+					font-size: 13px;
+				}
+			}
+		}
+
+		&.top {
+			&:before, &:after {
+				left: 15% !important;
+			}
+		}
+	}
+}
+
+.user {
+	float: right;
+	position: relative;
+	margin: 8px 20px;
+	cursor: pointer;
+
+	img {
+		border-radius: 50%;
+		width: 32px;
+		height: 32px;
+		margin: 0 20px 0 0;
+		display: inline-block;
+	}
+
+	p {
+		float: left;
+		margin: 5px 10px 0;
+		color: #FFF
+	}
+
+	.arrow {
+		background: sprite($icon-sprite, arrow) no-repeat;
+		position: absolute;
+		right: 5px;
+		top: 15px;
+		width: 7px;
+		height: 8px;
+	}
+}
+
+.edit-user {
+	width: 20%;
+	padding: 0 0 10px;
+	border-radius: 3px;
+	position: absolute;
+	background: #F5F5F5;
+	border: 2px solid #E8E8E8;
+	color: #555;
+	z-index: 9999;
+	top: 50px;
+	right: 0px;
+	display: none;
+
+	a {
+		display: block;
+		color: $colorText;
+		padding: 10px;
+		margin: 0;
+
+		&:hover {
+			color: #333;
+			background: #ffffff;
+			font-weight: 600;
+		}
+
+		&.active {
+			color: #333;
+			background: #ffffff;
+			font-weight: 600;
+		}
+	}
+}
+
+.name-user {
+	color: #FFF;
+	float: left;
+	margin: 8px 15px;
+}
+
+/***************************************************************************
+	Publicidades
+	**************************************************/
+.publicidade-header {
+	float: left;
+	width: 85%;
+	padding: em(20px) 0;
+	margin: em(30px) 0;
+
+	.boo-widget.custom {
+		margin: 0 auto !important;
+		z-index: 3 !important;
+	}
+}
+
+/***************************************************************************
+	Search Results
+	**************************************************/
+.filter {
+	float: left;
+	width: 100%;
+	margin: em(20px) 0;
+
+	li {
+		float: left;
+		margin: 0 em(10px) em(10px) 0;
+		padding: 0px em(10px) 0px 0;
+		border-right: 1px solid #f8f8f8;
+		line-height: 1.5em;
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+	.active {
+		color: #0a0a0a !important;
+	}
+}
+
+
+.search-list {
+	border: 1px solid #f2f2f2;
+	padding: em(20px);
+	float: left;
+	width: 100%;
+	margin-bottom: em(30px);
+
+	.row {
+		padding: em(0);
+	}
+
+	.thumb {
+		margin-left: 0;
+		padding-bottom: 30px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.sub-title {
+		b {
+			font-weight: 300;
+			font-size: em(13px);
+		}
+	}
+
+	.friends {
+		a {
+			margin: em(5px) 0 em(8px) em(5px);
+			position: relative;
+			float: left;
+		}
+
+		img {
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	.pictures {
+		float: left;
+		max-width: 70%;
+		margin-top: -5px;
+	}
+
+	.tooltip {
+			padding: 10px 5px 0 15px;
+			min-width: 180px;
+
+			&:after, &:before {
+				left: 10% !important;
+			}
+
+			p {
+				font-size: em(14px);
+			}
+	}
+
+	.more-list {
+		position: absolute;
+		left: 0%;
+		width: 100%;
+		bottom: -20px;
+		background: none;
+		@include box-shadow( none );
+	}
+}
+
+/***************************************************************************
+	Pagination
+	**************************************************/
+.pagination {
+	width: 100%;
+	float: left;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		padding: 10px 10px 0 0
+	}
+
+	.active {
+		color: #0a0a0a !important;
+	}
+
+	.disabled {
+		color: #e7e7e7;
+	}
+}
+
+
+/***************************************************************************
+	HOME
+	**************************************************/
+.not-logged {
+	float: left;
+	width: 100%;
+
+	.row {
+		margin: 50px auto;
+		width: 90%;
+		padding: 0;
+	}
+
+	.title {
+		font-weight: 400;
+		font-size: em(30px);
+		letter-spacing: -1.5px;
+		color: #2799AA;
+		margin-bottom: .6em;
+	}
+
+	.video {
+		border-radius: 3px;
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	.box {
+		text-align: center;
+		display: block;
+		margin: 0px 0 50px 2%;
+	}
+}
+
+
+/***************************************************************************
+FORMULARIO
+**************************************************/
+input, select {
+	outline: 0;
+	border: none;
+}
+
+
+.msg {
+	padding: 15px 20px;
+	width: 100%;
+	margin: 15px 0;
+
+	&.success {
+		background: #dbf3b1;
+	}
+
+	&.error {
+		background: #C93131;
+		color: #FFF;
+	}
+}
+
+/***************************************************************************
+	FOOTER
+	**************************************************/
+.footer-not-timeline {
+	.footer {
+		width: 100%;
+		margin-left: 0px;
+
+		.row {
+			width: 80%;
+		}
+	}
+}
+.footer {
+	background: #f9f9f9;
+	border-top: 1px solid #e7e7e7;
+	padding: em(20px) 0;
+	float: left;
+	width: 79.6%;
+	margin-left: 20.3%;
+
+	.row {
+		width: 95%;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	[class^="grid"] {
+		margin-bottom: em(40px);
+
+		.sub-title {
+			font-size: em(16px);
+			margin-bottom: em(5px);
+		}
+
+		a {
+			display: block;
+			margin-bottom: em(10px);
+		}
+	}
+
+	.planedia-footer {
+		text-align: right;
+
+		.sub-title {
+			font-size: em(24px);
+			font-weight: 600;
+		}
+
+	}
+
+	.nav {
+		width: 100%;
+		float: left;
+		padding: em(10px) 0 0;
+		border-top: 1px solid #e7e7e7;
+		border-bottom: 1px solid #e7e7e7;
+
+		a {
+			color: #2b2b2b;
+			font-size: em(13px);
+		}
+	}
+
+	.sociais {
+		top: 30px;
+		position: absolute !important;
+	}
+}

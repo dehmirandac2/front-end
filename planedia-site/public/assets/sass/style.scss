@@ -1,0 +1,47 @@
+// Hide tag angularJS
+.ng-cloak {
+    display: none;
+}
+
+@import "jqueryUI/core";
+@import "jqueryUI/menu";
+@import "jqueryUI/autocomplete";
+
+@import "compass/reset";
+@import "compass/css3";
+
+@import "base/mixins";
+@import "base/variables";
+
+@import "core/home";
+@import "core/grid";
+@import "core/timeline";
+@import "core/portal";
+@import "core/tipography";
+@import "core/listning";
+
+@import "ui/buttons";
+@import "ui/tooltip";
+@import "ui/rating";
+@import "ui/packs";
+@import "ui/autocomplete";
+@import "ui/callendar";
+@import "ui/font";
+@import "ui/login";
+@import "ui/chosen";
+@import "ui/profile";
+@import "ui/scroller";
+@import "ui/steps-timeline";
+@import "ui/view-mapa";
+@import "ui/multiplus";
+@import "ui/icons-image";
+
+/***************************************************************************
+	CONTENT
+	**************************************************/
+@import "core/base";
+
+
+#bcom_review_widget #bcom_review_widget_wrapper .hreview-vertical .summary .rating{
+    float: none;
+}

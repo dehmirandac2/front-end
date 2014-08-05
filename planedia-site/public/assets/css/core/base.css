@@ -1,0 +1,615 @@
+/* line 4, ../../sass/core/base.scss */
+.show-after {
+  display: none;
+}
+
+/***************************************************************************
+	LANGUAGES
+	**************************************************/
+/* line 11, ../../sass/core/base.scss */
+.language {
+  padding: 0.625em;
+  margin: 0.1875em -1.5625em;
+  float: right;
+  position: relative;
+  cursor: pointer;
+}
+/* line 18, ../../sass/core/base.scss */
+.language.language-footer {
+  margin-top: -20px;
+}
+/* line 21, ../../sass/core/base.scss */
+.language.language-footer li {
+  float: left;
+}
+/* line 26, ../../sass/core/base.scss */
+.language .ico {
+  display: block;
+  height: 24px;
+  color: #555;
+  padding-left: 34px;
+  font-size: 12px;
+  line-height: 2em;
+}
+/* line 34, ../../sass/core/base.scss */
+.language .ico.active {
+  width: 24px;
+}
+/* line 39, ../../sass/core/base.scss */
+.language .en {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -5994px no-repeat;
+}
+/* line 43, ../../sass/core/base.scss */
+.language .pt {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -5019px no-repeat;
+}
+/* line 47, ../../sass/core/base.scss */
+.language .tooltip-language {
+  left: -115%;
+  top: 45px;
+  min-width: 170px;
+}
+
+/***************************************************************************
+	TOPBAR
+	**************************************************/
+/* line 57, ../../sass/core/base.scss */
+.topbar {
+  width: 80%;
+  float: left;
+  padding: 1.25em 0 0;
+  background: #f5f5f5;
+  position: fixed;
+  top: 51px;
+  z-index: 999;
+  left: 20%;
+}
+/* line 67, ../../sass/core/base.scss */
+.topbar .sub-title {
+  font-weight: 500;
+  font-size: 1.125em;
+  margin: 0 0.625em 0 0;
+  float: left;
+}
+/* line 74, ../../sass/core/base.scss */
+.topbar .rating {
+  margin-top: 0.1875em;
+}
+/* line 78, ../../sass/core/base.scss */
+.topbar .actions {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+/* line 83, ../../sass/core/base.scss */
+.topbar .actions .sing-up {
+  padding: 0.625em 0.9375em;
+  cursor: pointer;
+}
+/* line 87, ../../sass/core/base.scss */
+.topbar .actions .sing-up .fa {
+  padding-left: 0px;
+}
+
+/***************************************************************************
+	CONTEUDO
+	**************************************************/
+/* line 97, ../../sass/core/base.scss */
+.content {
+  width: 63%;
+  margin-top: 135px;
+  margin-left: 20%;
+  float: left;
+}
+/* line 103, ../../sass/core/base.scss */
+.content.search {
+  width: 78%;
+  margin-bottom: 100px;
+  margin-top: 75px;
+}
+/* line 109, ../../sass/core/base.scss */
+.content.institucional {
+  margin-left: 0;
+  margin-top: 75px;
+}
+/* line 114, ../../sass/core/base.scss */
+.content.prifile-edit {
+  margin: 0;
+}
+
+/* line 119, ../../sass/core/base.scss */
+.content-full {
+  width: 100%;
+  float: left;
+}
+
+/* line 124, ../../sass/core/base.scss */
+.description-single-page {
+  margin: 1.25em 0;
+  overflow: hidden;
+}
+
+/* line 129, ../../sass/core/base.scss */
+.separator-single {
+  float: left;
+  border-top: 1px solid #ededed;
+  margin: 1.3125em 0 0;
+  width: 100%;
+  padding: 2.5em 0 0;
+}
+
+/* line 137, ../../sass/core/base.scss */
+.more-info {
+  margin: 0.625em 0 0;
+  padding: 1.25em 0 1.875em;
+}
+/* line 141, ../../sass/core/base.scss */
+.more-info .sub-title {
+  margin-bottom: 0.625em;
+}
+
+/* line 147, ../../sass/core/base.scss */
+.amenities li {
+  float: left;
+  width: 25%;
+  line-height: 1.5em;
+  font-size: 0.75em;
+}
+/* line 154, ../../sass/core/base.scss */
+.amenities .sub-title {
+  margin-bottom: 0.625em;
+}
+/* line 159, ../../sass/core/base.scss */
+.amenities.list-countries p {
+  margin-bottom: 2px;
+}
+
+/* line 165, ../../sass/core/base.scss */
+.institucional {
+  width: 100%;
+  padding: 2.5em 0;
+}
+/* line 169, ../../sass/core/base.scss */
+.institucional .row {
+  width: 95%;
+  margin: 0 auto;
+}
+/* line 174, ../../sass/core/base.scss */
+.institucional .title {
+  font-size: 1.875em;
+  font-weight: 400;
+  margin-bottom: 20px;
+  display: block;
+}
+/* line 181, ../../sass/core/base.scss */
+.institucional .sub-title {
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+/* line 187, ../../sass/core/base.scss */
+.institucional .strong {
+  margin-bottom: 3px;
+}
+
+/***************************************************************************
+	ABOUT
+	**************************************************/
+/* line 196, ../../sass/core/base.scss */
+.about {
+  margin: 50px 0;
+}
+/* line 199, ../../sass/core/base.scss */
+.about .first-box {
+  margin-left: 0;
+}
+/* line 203, ../../sass/core/base.scss */
+.about .description-information {
+  clear: both;
+  float: left;
+  margin: 20px 0;
+}
+/* line 208, ../../sass/core/base.scss */
+.about .description-information p {
+  margin-bottom: 0.3125em;
+  font-size: 0.875em;
+}
+/* line 212, ../../sass/core/base.scss */
+.about .description-information p strong {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/***************************************************************************
+	SELOS
+	**************************************************/
+/* line 224, ../../sass/core/base.scss */
+.selos {
+  float: left;
+  display: inline-block;
+  margin: 0.625em 1.25em 2.1875em 0;
+}
+
+/* line 230, ../../sass/core/base.scss */
+.romantic {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -248px no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 236, ../../sass/core/base.scss */
+.family {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -132px no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 242, ../../sass/core/base.scss */
+.world-heritage {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -596px no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 248, ../../sass/core/base.scss */
+.fifa-world-cup {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -480px no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 254, ../../sass/core/base.scss */
+.rio-2016 {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -364px no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 260, ../../sass/core/base.scss */
+.trip-advisor {
+  float: left;
+  width: 160px;
+}
+
+/* line 265, ../../sass/core/base.scss */
+.cdsROW.narrow {
+  width: 170px !important;
+}
+
+/***************************************************************************
+	SOCIAL BAR
+	**************************************************/
+/* line 273, ../../sass/core/base.scss */
+.social-bar {
+  width: 16.66667%;
+  height: 100%;
+  float: left;
+  padding: 1.25em;
+  background: #fbfbfb;
+  border-left: 1px solid #e9e9e9;
+  margin-top: 135px;
+}
+/* line 282, ../../sass/core/base.scss */
+.social-bar p {
+  font-weight: bold;
+  font-size: 1.125em;
+  color: #0A0A0A;
+  text-align: center;
+  margin-bottom: 0px;
+}
+/* line 290, ../../sass/core/base.scss */
+.social-bar .btn {
+  font-size: 1em !important;
+  margin-top: 10px;
+}
+/* line 295, ../../sass/core/base.scss */
+.social-bar .ico {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -2702px no-repeat;
+  width: 128px;
+  height: 66px;
+  display: block;
+  margin: 90px auto;
+  margin-bottom: 10px;
+}
+/* line 304, ../../sass/core/base.scss */
+.social-bar .fixed {
+  position: fixed;
+  right: 10px;
+  width: 15%;
+}
+
+/* line 311, ../../sass/core/base.scss */
+.friends-trip {
+  margin: 20px 0;
+  padding-bottom: 20px;
+  float: left;
+  width: 100%;
+  border-bottom: 2px dotted #eaeaea;
+}
+/* line 318, ../../sass/core/base.scss */
+.friends-trip li {
+  margin: 5px 0;
+  float: left;
+  width: 100%;
+}
+/* line 324, ../../sass/core/base.scss */
+.friends-trip a {
+  color: #6c6b6b;
+}
+/* line 328, ../../sass/core/base.scss */
+.friends-trip img {
+  border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  float: left;
+  margin: -2px 10px 10px 0;
+}
+/* line 336, ../../sass/core/base.scss */
+.friends-trip span {
+  font-size: 0.875em;
+  font-weight: 400;
+}
+/* line 340, ../../sass/core/base.scss */
+.friends-trip span b {
+  display: block;
+  color: #aaaaaa;
+  font-weight: 200;
+  font-size: 0.75em;
+}
+
+/***************************************************************************
+	SLIDE SHOW
+	**************************************************/
+/* line 353, ../../sass/core/base.scss */
+.slide-show {
+  overflow: hidden;
+  position: relative;
+}
+/* line 358, ../../sass/core/base.scss */
+.slide-show #carrousel img {
+  width: 100%;
+}
+/* line 363, ../../sass/core/base.scss */
+.slide-show .no-comission {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 95px;
+  height: 95px;
+  z-index: 995;
+}
+
+/* line 373, ../../sass/core/base.scss */
+.tab-slide {
+  float: left;
+  width: 100%;
+  margin-top: -28px;
+  z-index: 888;
+  position: relative;
+}
+/* line 380, ../../sass/core/base.scss */
+.tab-slide a {
+  background: url("../images/opacity.png") repeat;
+  padding: 8px 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
+  float: left;
+  font-size: 0.75em;
+}
+/* line 389, ../../sass/core/base.scss */
+.tab-slide a.active, .tab-slide a:hover {
+  background: #29a1b2;
+}
+
+/* line 397, ../../sass/core/base.scss */
+.prev-carrousel,
+.next-carrousel {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 28px;
+  display: block;
+  z-index: 99;
+  cursor: pointer;
+}
+
+/* line 407, ../../sass/core/base.scss */
+.prev-carrousel {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -5950px no-repeat;
+  left: 15px;
+}
+
+/* line 412, ../../sass/core/base.scss */
+.next-carrousel {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -5872px no-repeat;
+  right: 15px;
+}
+
+/* line 418, ../../sass/core/base.scss */
+.form, .contact {
+  margin-left: 0;
+}
+/* line 421, ../../sass/core/base.scss */
+.form label, .contact label {
+  display: block;
+  font-size: 1.125em;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+/* line 433, ../../sass/core/base.scss */
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="time"],
+.form select,
+.form textarea, .contact input[type="text"],
+.contact input[type="password"],
+.contact input[type="email"],
+.contact input[type="time"],
+.contact select,
+.contact textarea {
+  display: block;
+  width: 100%;
+  background: #f5f5f5;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+/* line 446, ../../sass/core/base.scss */
+.form input[type="text"].error,
+.form input[type="password"].error,
+.form input[type="email"].error,
+.form input[type="time"].error,
+.form select.error,
+.form textarea.error, .contact input[type="text"].error,
+.contact input[type="password"].error,
+.contact input[type="email"].error,
+.contact input[type="time"].error,
+.contact select.error,
+.contact textarea.error {
+  border: 1px solid #9f3100;
+  color: #a84012;
+}
+/* line 451, ../../sass/core/base.scss */
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus,
+.form input[type="time"]:focus,
+.form select:focus,
+.form textarea:focus, .contact input[type="text"]:focus,
+.contact input[type="password"]:focus,
+.contact input[type="email"]:focus,
+.contact input[type="time"]:focus,
+.contact select:focus,
+.contact textarea:focus {
+  border: 1px solid #29a1b2;
+}
+/* line 456, ../../sass/core/base.scss */
+.form textarea, .contact textarea {
+  height: 120px;
+  padding-top: 10px;
+}
+/* line 461, ../../sass/core/base.scss */
+.form input[type="submit"], .form button, .contact input[type="submit"], .contact button {
+  float: right;
+  cursor: pointer;
+  border: none;
+}
+/* line 467, ../../sass/core/base.scss */
+.form .trecho, .contact .trecho {
+  width: 44% !important;
+  float: left;
+}
+/* line 472, ../../sass/core/base.scss */
+.form .arrow, .contact .arrow {
+  float: left;
+  margin: 13px 5px;
+}
+/* line 477, ../../sass/core/base.scss */
+.form .msg-form, .contact .msg-form {
+  float: left;
+  margin: 25px 0 0 20px;
+  font-size: 16px;
+  display: none;
+}
+/* line 483, ../../sass/core/base.scss */
+.form .msg-form.success, .contact .msg-form.success {
+  color: #91c931;
+}
+/* line 487, ../../sass/core/base.scss */
+.form .msg-form.error, .contact .msg-form.error {
+  color: #C93131;
+}
+
+/***************************************************************************
+	BREADCRUMB
+	**************************************************/
+/* line 497, ../../sass/core/base.scss */
+.breadcrumb {
+  margin: 20px 0;
+}
+/* line 500, ../../sass/core/base.scss */
+.breadcrumb li {
+  display: inline-block;
+  margin-right: 5px;
+  color: #555555;
+}
+/* line 505, ../../sass/core/base.scss */
+.breadcrumb li .arrow {
+  color: #dddddd;
+  font-size: 12px;
+  margin-left: 5px;
+}
+/* line 512, ../../sass/core/base.scss */
+.breadcrumb.top-bar {
+  width: 100%;
+  float: left;
+  margin: 5px 0px 0;
+  margin-bottom: 0px;
+}
+/* line 518, ../../sass/core/base.scss */
+.breadcrumb.top-bar p {
+  font-size: 0.75em;
+}
+/* line 522, ../../sass/core/base.scss */
+.breadcrumb.top-bar .fa {
+  font-size: 10px;
+  margin: 0 -3px 0 3px;
+}
+
+/***************************************************************************
+	ADSENSE
+	**************************************************/
+/* line 533, ../../sass/core/base.scss */
+.adsense {
+  float: right;
+}
+
+/* line 537, ../../sass/core/base.scss */
+#mapa {
+  width: 100%;
+  height: 350px;
+  display: block;
+}
+
+/***************************************************************************
+	REDES SOCIAIS
+	**************************************************/
+/* line 547, ../../sass/core/base.scss */
+.sociais {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  z-index: 999;
+}
+/* line 553, ../../sass/core/base.scss */
+.sociais li {
+  float: left;
+  margin-left: 15px;
+}
+/* line 557, ../../sass/core/base.scss */
+.sociais li.twitter {
+  margin-right: -25px;
+}
+
+/***************************************************************************
+	CONTACT ZENDDESK
+	**************************************************/
+/* line 566, ../../sass/core/base.scss */
+.open-contact-box {
+  position: fixed;
+  right: 1%;
+  bottom: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 25px;
+}

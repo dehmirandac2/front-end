@@ -1,0 +1,539 @@
+
+@import "../base/mixins";
+@import "../base/variables"; 
+
+// Calendar
+.callendar { 
+	border-top: 1px solid #E7E7E7;
+	border-bottom: 1px solid #E7E7E7;
+	margin: -1px 0;
+	padding: 0;
+
+	.header-calendar {
+		font-weight: 300;
+		padding: em(15px) em(15px) 0 em(15px);
+		margin: 0;
+	}
+
+	input[type="text"] { 
+		color: $colorText;
+		font-size: em(14px);
+		padding: em(15px) em(15px);
+		border: 1px solid #AAA;
+		border-radius: 5px;
+		margin: 5px 0 10px;
+		display: block;
+		width: 100%;
+	}
+
+	label {
+		color: $colorText;
+		position: relative;
+		float: left;
+		width: 100%;
+
+		.fa {
+			position: absolute;
+			color: #d1d1d1;
+			right: 10px;
+			top: 30px;
+			font-size: em(25px);
+		}
+	}
+
+	[class^="grid"] {
+		padding: 0;
+	}
+
+	.box-select-room {
+		min-height: 510px;
+	}
+
+
+	.select {
+		position: relative;
+		padding: em(15px) em(10px) em(5px) 0;
+		color: $colorText;
+		width: 100%;
+		float: left;
+
+		span {
+			position: absolute;
+			top: 2px;
+			left: 10px;
+			color: #aaaaaa;
+			font-size: em(12px);
+		}
+
+		.fa {
+			float: right;
+		}
+	}
+
+	.content-room {
+		float: left;
+		width: 100%;
+	}
+
+	.room-list {
+		
+		li {
+			padding: 20px 0;
+			float: left;
+			width: 100%;
+			border-bottom: 1px dashed #E7E7E7;
+		}
+
+		p {
+			color: $colorText;
+			margin-bottom: 3px;
+
+			a {
+				color: $blue_clear;
+				margin-right: 15px;
+				font-weight: 400;
+			}
+
+			span {
+				font-weight: 400;
+				display: block;
+			}
+		}
+
+		.desc {
+			color: #aaaaaa;
+			font-size: 12px;
+		}
+
+		.content-radio {
+			float: left;
+			margin-left: 10px;
+			width: 77%;
+		}
+	}
+
+	.how-many {
+		label {
+			position: relative;
+			font-size: 16px;
+			margin-bottom: 5px;
+			display: block;
+			color: $colorText;
+		}
+
+		.chosenCustom {
+			width: 100%;
+			padding: 20px 0px;
+
+			.label {
+				line-height: 35px;
+
+				.fa {
+					margin-top: 12px;
+					margin-right: 10px;
+				}
+			}
+
+			&.last {
+				margin-right: 0px; 
+			}
+		}
+	}
+
+	.border-left {
+		border-left: 1px solid #E7E7E7;
+	}
+
+	.box-select-room-last {
+		padding-bottom: 105px;
+
+		.bottom-order-now {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			width: 95%;
+		}
+
+		.price-now {
+			bottom: 65px;
+		}
+	}
+
+	.footer-date {
+		margin-top: 15px;
+	}
+
+	.row {
+		padding: 15px 10px;
+	}
+
+	.erro-room-list {
+		background: lighten( #9F3100, 15% );
+		padding: 5px 15px;
+		color: #FFF !important;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	.init-page-room-list{
+		text-align: center;
+		margin: 75px 0;
+		color: #555;
+		background: #F1EEEE;
+		border-radius: 3px;
+		padding: 20px;
+	}
+}
+
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 8px;
+	width: 11px;
+	height: 15px; 
+	cursor: pointer;
+	@include image_replacement();
+}
+
+.ui-datepicker .ui-datepicker-prev {
+	left: 15px;
+	background: sprite($icon-sprite, arrow-prev) no-repeat;
+}
+
+.ui-datepicker .ui-datepicker-next {
+	right: 15px;
+	background: sprite($icon-sprite, arrow-next) no-repeat;
+}
+
+.ui-datepicker .ui-datepicker-title {
+	line-height: 1.4em;
+	text-align: center;
+	color: $colorText;
+	font-weight: 200;
+}
+
+.ui-datepicker table {
+	width: 100%;
+	font-size: em(12px);
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+
+.ui-datepicker th {
+	padding: em(5px) em(15px);
+	text-align: center;
+	border: 0;
+}
+
+.ui-datepicker td {
+	border: 0;
+	text-align: center;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: em(5px) em(0);
+	text-decoration: none;
+}
+
+.ui-datepicker {
+	padding: em(10px);
+	background: #f5f5f5;
+	color: #6c6c6c;
+	border: 1px solid #e9e9e9;
+	border-radius: 3px;
+	margin-top: 2px !important;
+	z-index: 9999 !important;
+	opacity: 10 !important;
+	filter: alpha(opacity=100) !important;
+	display: none;
+
+	.ui-datepicker-header {
+		height: 35px;
+		position: relative;
+	}
+
+	thead {
+		span {
+			color: #aaa;
+		}
+	}
+
+	tbody {
+		a {
+			color: #6c6c6c;
+
+			&:hover {
+				background: #e1dfdf;
+			}
+
+			&.ui-state-active {
+				// background: $blue_clear;
+				// color: #FFF;
+			}
+		}
+	}
+}
+
+
+// Custom Detepicker
+.dp-highlight {
+	.ui-state-default {
+		background: $blue_clear;
+		color: #FFF;
+	}
+
+	&.first-selected, &.last-selected {
+		position: relative;
+		background: #91C931;
+
+		.ui-state-default {
+			background: #91C931;
+		}
+	}
+	
+	&.first-selected:after, 
+	&.first-selected:before {
+		left: 100%;
+	}
+
+	&.last-selected:after, 
+	&.last-selected:before {
+		right: 100% !important;
+	}
+
+	&.first-selected:after, &.first-selected:before
+	&.last-selected:after, &.last-selected:before {
+		top: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	&.first-selected:after {
+		border-color: rgba(145, 201, 49, 0);
+		border-left-color: #91C931;
+		border-width: 5px;
+		margin-top: -5px;
+	}
+	&.first-selected:before {
+		border-color: rgba(145, 201, 49, 0);
+		border-left-color: #91C931;
+		border-width: 6px;
+		margin-top: -6px;
+	}
+
+	&.last-selected:after {
+		border-color: rgba(145, 201, 49, 0);
+		border-right-color: #91C931;
+		border-width: 5px;
+		margin-top: -5px;
+	}
+	&.last-selected:before {
+		border-color: rgba(145, 201, 49, 0);
+		border-right-color: #91C931;
+		border-width: 6px;
+		margin-top: -6px;
+	}
+}
+
+.ui-state-highlight {
+	a {
+		color: $color_white !important;
+		background: $blue_clear;
+	}
+}
+
+.ui-state-disabled {
+	span {
+		color: #d1d1d1;
+	}
+}
+
+
+// Custom checbox and select
+.radio {  
+	float: left;
+	width: 7%;
+	padding: 20px 5px 0;
+	position: relative;
+
+	&.chosenCustom {
+		border-radius: 3px;
+		border: 1px solid #D1D1D1;
+
+		select {
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			filter: alpha(opacity=0);
+			left: 0;
+			top: 0;
+			position: absolute;
+		}
+	}
+
+	label {
+		color: #727272;
+		margin-left: 30%;
+	}
+
+	input[type="radio"],
+	input[type="checkbox"] {
+	  display:none;
+	}
+
+	input[type="radio"] + span:before,
+	input[type="checkbox"] + span:before {
+	  font-family: 'FontAwesome';
+	  padding-right: 3px;
+	  font-size: 20px;
+	}
+
+	input[type="radio"] + span:before {
+	  content: "\f10c"; /* circle-blank */
+	}
+
+	input[type="radio"]:checked + span:before {
+	  content: "\f111"; /* circle */
+	}
+
+	input[type="checkbox"] + span:before {
+	  content: "\f096"; /* check-empty */
+	}
+
+	input[type="checkbox"]:checked + span:before {
+	  content: "\f046"; /* check */
+	}
+
+	.label {
+		position: absolute;
+		padding: 2px 0px;
+		width: 100%;
+		text-align: center;
+		left: 0;
+		top: 0;
+		font-size: em(14px);
+
+		.fa {
+			font-size: 11px;
+			float: right;
+			margin-top: 3px;
+			margin-right: 4px;
+		}
+	}
+}
+
+.room-list {
+	max-height: 370px;
+	overflow: hidden;
+	overflow-y: scroll;
+
+	.sombra {
+		width: 100%;
+		height: 30px;
+		bottom: 125px;
+		left: 0px;
+		position: absolute;
+		background: url('../images/icos/sombra.png') left bottom repeat-x; 
+	}
+
+	.thumb {
+		float: left;
+		width: 10%;
+		padding: 5px 5px 0;
+		position: relative;
+		margin-right: 10px;
+		text-align: center;
+
+		img {
+			border-radius: 5px;
+			display: block;
+		}
+	}
+}
+
+// Date Pick em grupo
+.ui-datepicker-group {
+	float: left;
+	margin: 0 25px 0 0;
+
+	&.ui-datepicker-group-last {
+		margin-right: 0px;
+	}
+}
+
+.ui-datepicker-multi-2 {
+	width: 600px !important;
+}
+
+.powered-booking {
+	margin-top: 15px;
+
+	button {
+		width: 100%;
+		border: none;
+	}
+
+	img {
+		width: 110px;
+		margin: 10px 0 0 0;
+		display: inline-block;
+		float: right;
+	}
+
+	p {
+		font-size: em(13px);
+		color: #d2d2d2;
+		text-align: right;
+		margin: 10px 4px;
+		float: right;
+	}
+}
+
+.calendar-hotel {
+	margin: 0 em(-30px);
+
+	.ui-datepicker {
+		border-left: 0;
+		border-right: 0;
+	}
+}
+
+
+
+.value-date {
+	color: #FFF !important;
+}
+
+.calendario-value {
+	color: $colorText;
+	font-size: em(14px);
+	position: absolute;
+	top: 36px;
+	left: 15px;
+	font-weight: 500;
+}
+
+// Spiner
+.spinner {
+	position: absolute;
+	left: 45%;
+	top: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+

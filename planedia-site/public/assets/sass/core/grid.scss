@@ -1,0 +1,50 @@
+@import "base/mixins";
+@import "base/variables";
+
+/* --------------------------------------
+    CLEAR
+-----------------------------------------------------*/
+.row:before,
+.row:after {
+    display: table;
+    content: "";
+    zoom: 1;
+}
+.row:after { clear: both }
+/* --------------------------------------
+    COLUNAS EM %
+-----------------------------------------------------*/
+.row {
+    zoom: 1;
+    // padding: 0 em(40px);
+    padding: 0 em(20px) 0 em(15px);
+}
+.grid,
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6,
+.grid7,
+.grid8,
+.grid9,
+.grid10,
+.grid11,
+.grid12 {
+    float: left;
+    margin-left: 2%;
+    position: relative;
+}
+.grid1 { width: 6.333% }
+.grid2 { width: 14.667% }
+.grid3 { width: 23.0% }
+.grid4 { width: 31.333% }
+.grid5 { width: 39.667% }
+.grid6 { width: 48.0% }
+.grid7 { width: 56.333% }
+.grid8 { width: 64.667% }
+.grid9 { width: 73.0% }
+.grid10 { width: 81.333% }
+.grid11 { width: 89.667% }
+.grid12 { width: 98.0% }

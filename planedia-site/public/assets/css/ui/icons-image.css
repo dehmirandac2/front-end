@@ -1,0 +1,118 @@
+/* line 4, ../../sass/ui/icons-image.scss */
+.ico-select {
+  background: #eaeae9;
+  border-radius: 3px;
+  float: left;
+  width: 20%;
+  margin: 1% 2.5% 1.5% 2.5%;
+}
+/* line 11, ../../sass/ui/icons-image.scss */
+.ico-select [class^="ico-"] {
+  display: block;
+  margin: 30px auto;
+  width: 65px;
+  height: 48px;
+}
+/* line 18, ../../sass/ui/icons-image.scss */
+.ico-select .name-ico {
+  padding: 10px;
+  background: #29a1b2;
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #FFF;
+  border-radius: 0 0 3px 3px;
+}
+/* line 30, ../../sass/ui/icons-image.scss */
+.ico-select:hover .name-ico, .ico-select.active .name-ico {
+  background: #91c931;
+}
+/* line 34, ../../sass/ui/icons-image.scss */
+.ico-select:hover .ico-single, .ico-select.active .ico-single {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -1497px no-repeat;
+}
+/* line 38, ../../sass/ui/icons-image.scss */
+.ico-select:hover .ico-couple, .ico-select.active .ico-couple {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -1625px no-repeat;
+}
+/* line 41, ../../sass/ui/icons-image.scss */
+.ico-select:hover .ico-group, .ico-select.active .ico-group {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -1305px no-repeat;
+}
+/* line 45, ../../sass/ui/icons-image.scss */
+.ico-select:hover .ico-adventure, .ico-select.active .ico-adventure {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -3360px no-repeat;
+}
+/* line 49, ../../sass/ui/icons-image.scss */
+.ico-select:hover .ico-beach, .ico-select.active .ico-beach {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -2374px no-repeat;
+}
+/* line 53, ../../sass/ui/icons-image.scss */
+.ico-select:hover .ico-city, .ico-select.active .ico-city {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -2976px no-repeat;
+}
+/* line 57, ../../sass/ui/icons-image.scss */
+.ico-select:hover .ico-family, .ico-select.active .ico-family {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -2848px no-repeat;
+}
+/* line 61, ../../sass/ui/icons-image.scss */
+.ico-select:hover .ico-gay-friend, .ico-select.active .ico-gay-friend {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -1873px no-repeat;
+}
+/* line 65, ../../sass/ui/icons-image.scss */
+.ico-select:hover .ico-luxury, .ico-select.active .ico-luxury {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -3232px no-repeat;
+}
+/* line 69, ../../sass/ui/icons-image.scss */
+.ico-select:hover .ico-night, .ico-select.active .ico-night {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -2574px no-repeat;
+}
+/* line 73, ../../sass/ui/icons-image.scss */
+.ico-select:hover .ico-work, .ico-select.active .ico-work {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -3104px no-repeat;
+}
+/* line 78, ../../sass/ui/icons-image.scss */
+.ico-select .ico-single {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -1433px no-repeat;
+}
+/* line 82, ../../sass/ui/icons-image.scss */
+.ico-select .ico-couple {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -1561px no-repeat;
+}
+/* line 86, ../../sass/ui/icons-image.scss */
+.ico-select .ico-group {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -1369px no-repeat;
+}
+/* line 90, ../../sass/ui/icons-image.scss */
+.ico-select .ico-adventure {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -3296px no-repeat;
+}
+/* line 94, ../../sass/ui/icons-image.scss */
+.ico-select .ico-beach {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -2310px no-repeat;
+}
+/* line 98, ../../sass/ui/icons-image.scss */
+.ico-select .ico-city {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -2912px no-repeat;
+}
+/* line 102, ../../sass/ui/icons-image.scss */
+.ico-select .ico-family {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -2784px no-repeat;
+}
+/* line 106, ../../sass/ui/icons-image.scss */
+.ico-select .ico-gay-friend {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -1809px no-repeat;
+}
+/* line 110, ../../sass/ui/icons-image.scss */
+.ico-select .ico-luxury {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -3168px no-repeat;
+}
+/* line 114, ../../sass/ui/icons-image.scss */
+.ico-select .ico-night {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -2638px no-repeat;
+}
+/* line 118, ../../sass/ui/icons-image.scss */
+.ico-select .ico-work {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -3040px no-repeat;
+}

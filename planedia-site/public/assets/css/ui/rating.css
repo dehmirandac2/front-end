@@ -1,0 +1,63 @@
+/* line 4, ../../sass/ui/rating.scss */
+.rating {
+  margin: 5px 0 0 -2px;
+  float: left;
+}
+
+/* line 9, ../../sass/ui/rating.scss */
+.rating:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* line 15, ../../sass/ui/rating.scss */
+.rating:not(:checked) > label {
+  width: 20px;
+  height: 20px;
+  padding: 0 .1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1.2;
+  color: transparent;
+  float: right;
+  cursor: auto;
+  background-image: url(../images/icos/rating-planedia-inative.png);
+}
+
+/* line 31, ../../sass/ui/rating.scss */
+.rating:not(:checked) > label:before {
+  content: 'o';
+}
+
+/* line 35, ../../sass/ui/rating.scss */
+.rating > input:checked ~ label {
+  color: transparent;
+}
+
+/* line 41, ../../sass/ui/rating.scss */
+.rating:not(:checked) > label.active,
+.rating:not(:checked) > label.active ~ label {
+  background-image: url(../images/icos/rating-planedia.png);
+}
+
+/* line 45, ../../sass/ui/rating.scss */
+.rating > label:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+/* line 51, ../../sass/ui/rating.scss */
+.rating-best-place {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../images/icos/rating-planedia-inative.png);
+}
+/* line 57, ../../sass/ui/rating.scss */
+.rating-best-place.active {
+  background-image: url(../images/icos/rating-planedia.png);
+}

@@ -1,0 +1,501 @@
+/* line 4, ../../sass/ui/profile.scss */
+.nav-account {
+  width: 18.33%;
+  height: 100%;
+  float: left;
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 400;
+  position: relative;
+  margin-top: 70px;
+}
+/* line 14, ../../sass/ui/profile.scss */
+.nav-account li {
+  margin-bottom: 20px;
+}
+/* line 18, ../../sass/ui/profile.scss */
+.nav-account .fa {
+  color: #555555;
+  margin-right: 10px;
+}
+/* line 23, ../../sass/ui/profile.scss */
+.nav-account a {
+  font-weight: 200;
+  color: #555555;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 15%;
+}
+/* line 30, ../../sass/ui/profile.scss */
+.nav-account a.title {
+  font-weight: 400;
+  color: #29a1b2;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+/* line 39, ../../sass/ui/profile.scss */
+.my-perfil {
+  margin-left: -2%;
+}
+/* line 42, ../../sass/ui/profile.scss */
+.my-perfil .sub-title {
+  font-weight: 1.5em;
+}
+/* line 45, ../../sass/ui/profile.scss */
+.my-perfil .sub-title.name {
+  margin-bottom: 0px;
+}
+/* line 51, ../../sass/ui/profile.scss */
+.my-perfil .ico-profile img {
+  border-radius: 3px;
+}
+/* line 57, ../../sass/ui/profile.scss */
+.my-perfil .form label {
+  font-size: 1.125em;
+}
+/* line 62, ../../sass/ui/profile.scss */
+.my-perfil .delet-account {
+  margin: -28px 0 4em 2%;
+  font-size: 0.875em;
+  color: #f3643c;
+  float: left;
+}
+
+/* line 71, ../../sass/ui/profile.scss */
+.travel-style {
+  margin: 1.875em 0 2.5em;
+}
+/* line 74, ../../sass/ui/profile.scss */
+.travel-style .list-tab {
+  margin: 0 19px 30px 19px;
+  width: 170px;
+  height: 145px;
+  float: left;
+  position: relative;
+}
+/* line 82, ../../sass/ui/profile.scss */
+.travel-style .btn {
+  width: 100px;
+  margin-right: 20px;
+}
+/* line 87, ../../sass/ui/profile.scss */
+.travel-style .selos {
+  padding: 1.25em 0.625em;
+  background: #29a1b2;
+  color: #FFF;
+  display: block;
+  text-align: center;
+  width: 170px;
+  height: 145px;
+  border-radius: 5px;
+}
+/* line 97, ../../sass/ui/profile.scss */
+.travel-style .selos [class^="ico"] {
+  width: 80px;
+  height: 60px;
+  background: #FFF;
+  display: block;
+  margin: 20px auto;
+  margin-bottom: 5px;
+}
+/* line 106, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-adventure {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -5477px no-repeat;
+}
+/* line 110, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-business {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -4230px no-repeat;
+}
+/* line 114, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-foodies {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -3424px no-repeat;
+}
+/* line 118, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-nightlife {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -4022px no-repeat;
+}
+/* line 122, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-budget {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -3890px no-repeat;
+}
+/* line 126, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-family {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -4517px no-repeat;
+}
+/* line 130, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-luxury {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -4306px no-repeat;
+}
+/* line 134, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-student {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -4715px no-repeat;
+}
+/* line 138, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-wellness {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -4098px no-repeat;
+}
+/* line 142, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-historical {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -5263px no-repeat;
+}
+/* line 146, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-art {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -3712px no-repeat;
+}
+/* line 150, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-culture {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -4441px no-repeat;
+}
+/* line 154, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-outdoor {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -3500px no-repeat;
+}
+/* line 158, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-spiritual {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -5589px no-repeat;
+}
+/* line 162, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-vegetarian {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -4867px no-repeat;
+}
+/* line 166, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-flight {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -5059px no-repeat;
+}
+/* line 170, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-car {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -4593px no-repeat;
+}
+/* line 174, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-bus {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -4791px no-repeat;
+}
+/* line 178, ../../sass/ui/profile.scss */
+.travel-style .selos .ico-train {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -4943px no-repeat;
+}
+/* line 184, ../../sass/ui/profile.scss */
+.travel-style .active .selos {
+  background: #91c931;
+}
+/* line 188, ../../sass/ui/profile.scss */
+.travel-style .active .check {
+  display: block;
+}
+/* line 193, ../../sass/ui/profile.scss */
+.travel-style .check {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 14px;
+  height: 12px;
+  display: none;
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -6244px no-repeat;
+}
+/* line 204, ../../sass/ui/profile.scss */
+.travel-style input[type="radio"],
+.travel-style input[type="checkbox"] {
+  display: none;
+}
+
+/* line 212, ../../sass/ui/profile.scss */
+.last-task li {
+  list-style: inside decimal;
+  margin-bottom: 5px;
+}
+/* line 217, ../../sass/ui/profile.scss */
+.last-task a {
+  color: #555555;
+}
+
+/* line 225, ../../sass/ui/profile.scss */
+.institucional .topbar .sub-title {
+  font-size: 1.125em;
+  margin-bottom: 0px;
+  margin-left: 1.25em;
+}
+
+/* line 233, ../../sass/ui/profile.scss */
+.select-trip {
+  margin-left: -2% !important;
+}
+
+/* line 237, ../../sass/ui/profile.scss */
+.content-tab-transporte {
+  display: none;
+}
+/* line 240, ../../sass/ui/profile.scss */
+.content-tab-transporte.search-flights {
+  display: block;
+  margin-top: 30px;
+}
+/* line 244, ../../sass/ui/profile.scss */
+.content-tab-transporte.search-flights .box-search-flight {
+  margin-bottom: 60px;
+  margin-left: -15px;
+  width: 97%;
+}
+/* line 250, ../../sass/ui/profile.scss */
+.content-tab-transporte.search-flights .btn {
+  margin: 14px 0px 0px !important;
+}
+/* line 255, ../../sass/ui/profile.scss */
+.content-tab-transporte .row {
+  padding: 0;
+}
+/* line 259, ../../sass/ui/profile.scss */
+.content-tab-transporte .add-scale {
+  clear: both;
+  display: inline-block;
+  margin: 0px 0 20px 20px;
+}
+/* line 265, ../../sass/ui/profile.scss */
+.content-tab-transporte .btn {
+  margin-right: 30px;
+}
+/* line 270, ../../sass/ui/profile.scss */
+.content-tab-transporte .form label {
+  font-size: 1em;
+}
+/* line 275, ../../sass/ui/profile.scss */
+.content-tab-transporte .remove-item {
+  text-align: center;
+  margin: 35px 0 0 -20px;
+  opacity: .4;
+}
+/* line 281, ../../sass/ui/profile.scss */
+.content-tab-transporte .show-remove {
+  position: absolute;
+  right: -35px;
+}
+
+/* line 289, ../../sass/ui/profile.scss */
+#new-flight .remove-item {
+  opacity: 1;
+}
+
+/* line 294, ../../sass/ui/profile.scss */
+#map-user {
+  height: 485px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* line 301, ../../sass/ui/profile.scss */
+.prifile-edit {
+  width: 80% !important;
+}
+
+/* line 308, ../../sass/ui/profile.scss */
+.box-search-flight {
+  padding: 15px;
+  border-radius: 3px;
+  background: #f6f6f6;
+  float: left;
+}
+/* line 316, ../../sass/ui/profile.scss */
+.box-search-flight input[type="text"],
+.box-search-flight input[type="time"],
+.box-search-flight input[type="email"] {
+  background: #FFF !important;
+}
+/* line 320, ../../sass/ui/profile.scss */
+.box-search-flight input[type="time"] {
+  padding-right: 8px;
+}
+
+/* line 325, ../../sass/ui/profile.scss */
+.select {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* line 330, ../../sass/ui/profile.scss */
+.show-for-ida {
+  margin: 30px 0 0 20px;
+}
+
+/* line 335, ../../sass/ui/profile.scss */
+.radio.chosenCustom {
+  width: 85%;
+  height: 38px;
+  background: #FFF;
+}
+/* line 340, ../../sass/ui/profile.scss */
+.radio.chosenCustom .label {
+  padding: 10px 0px;
+}
+
+/* line 348, ../../sass/ui/profile.scss */
+.loading-search img {
+  width: 220px;
+  display: block;
+  margin: 30px auto;
+}
+
+/* line 355, ../../sass/ui/profile.scss */
+#copy-flight {
+  margin-top: 30px;
+}
+
+/* line 360, ../../sass/ui/profile.scss */
+.adsense {
+  float: right;
+}
+/* line 363, ../../sass/ui/profile.scss */
+.adsense.fixedTop {
+  position: fixed;
+  top: 64px;
+  right: 43px;
+}
+
+/* line 372, ../../sass/ui/profile.scss */
+.list-search-flight {
+  margin-bottom: 25px;
+  background: #F6F6F6;
+  margin-left: 0px;
+  padding: 20px 15px;
+}
+/* line 378, ../../sass/ui/profile.scss */
+.list-search-flight .voo {
+  margin-bottom: 20px;
+}
+/* line 382, ../../sass/ui/profile.scss */
+.list-search-flight table {
+  width: 100%;
+  background: #FFF;
+}
+/* line 386, ../../sass/ui/profile.scss */
+.list-search-flight table .ida {
+  background: #91c931;
+  color: #FFF;
+}
+/* line 390, ../../sass/ui/profile.scss */
+.list-search-flight table .ida th {
+  padding: 10px;
+}
+/* line 394, ../../sass/ui/profile.scss */
+.list-search-flight table .ida.volta {
+  background: #16bbea;
+}
+/* line 399, ../../sass/ui/profile.scss */
+.list-search-flight table .list-itens-voo {
+  border-top: 1px solid #F6F6F6;
+}
+/* line 402, ../../sass/ui/profile.scss */
+.list-search-flight table .list-itens-voo td {
+  padding: 2px 10px;
+  font-size: 0.875em;
+}
+/* line 407, ../../sass/ui/profile.scss */
+.list-search-flight table .list-itens-voo .airline-logo {
+  width: 42%;
+}
+/* line 411, ../../sass/ui/profile.scss */
+.list-search-flight table .list-itens-voo .name-airport {
+  display: block;
+  margin-top: 5px;
+  color: #3399cc;
+  font-size: 11px;
+}
+/* line 420, ../../sass/ui/profile.scss */
+.list-search-flight .ico-flith-status {
+  float: left;
+  margin-right: 15px;
+}
+/* line 425, ../../sass/ui/profile.scss */
+.list-search-flight .date-voo {
+  font-size: 12px;
+}
+
+/* line 430, ../../sass/ui/profile.scss */
+.action-voo {
+  background: #FFF;
+  padding: 35px;
+  margin-top: 40px;
+}
+/* line 435, ../../sass/ui/profile.scss */
+.action-voo p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+/* line 440, ../../sass/ui/profile.scss */
+.action-voo .desc-price {
+  font-size: 12px;
+  display: block;
+  margin: 0px 3px 25px;
+}
+/* line 446, ../../sass/ui/profile.scss */
+.action-voo .price {
+  color: #d7267d;
+  font-size: 40px;
+  font-weight: 600;
+  margin: -17px 0 5px -2px;
+}
+/* line 453, ../../sass/ui/profile.scss */
+.action-voo .btn {
+  margin: 20px 0 0 0;
+  padding: 15px;
+  display: block;
+  background: #d7267d;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+}
+/* line 462, ../../sass/ui/profile.scss */
+.action-voo .btn .fa {
+  float: right;
+  margin: 6px;
+}
+/* line 468, ../../sass/ui/profile.scss */
+.action-voo .origin-destino {
+  margin: 15px 0px 20px;
+  clear: both;
+}
+/* line 472, ../../sass/ui/profile.scss */
+.action-voo .origin-destino p {
+  font-size: 13px;
+}
+
+/* line 478, ../../sass/ui/profile.scss */
+.error-search-list {
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  margin: 30px 0;
+  color: #f3643c;
+}
+
+/* line 490, ../../sass/ui/profile.scss */
+.mask-mapa {
+  height: 285px;
+  overflow: hidden;
+  width: 100%;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+/* line 498, ../../sass/ui/profile.scss */
+.mask-mapa.show-more-map {
+  height: 500px;
+}
+/* line 502, ../../sass/ui/profile.scss */
+.mask-mapa .sombra {
+  position: absolute;
+  bottom: 0px;
+  left: 47%;
+  background: #d7267d;
+  width: 60px;
+  height: 30px;
+  z-index: 777;
+  border-radius: 30px 30px 0 0;
+  color: #FFF;
+}
+/* line 513, ../../sass/ui/profile.scss */
+.mask-mapa .sombra .fa {
+  text-align: center;
+  display: block;
+  margin-top: 11px;
+  color: #FFF;
+}

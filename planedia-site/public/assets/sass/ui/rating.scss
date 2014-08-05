@@ -1,0 +1,62 @@
+@import "base/mixins";
+@import "base/variables";
+
+.rating {
+    margin: 5px 0 0 -2px;
+    float: left;
+}
+
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    width:20px;
+    height: 20px;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:18px;
+    line-height:1.2;
+    color: transparent;
+    float: right;
+    cursor: auto;
+    background-image: url(../images/icos/rating-planedia-inative.png);
+    // background-size: 15px 15px;
+}
+
+.rating:not(:checked) > label:before {
+    content: 'o';
+}
+
+.rating > input:checked ~ label {
+    color: transparent;
+}
+
+
+.rating:not(:checked) > label.active,
+.rating:not(:checked) > label.active ~ label {
+    background-image: url(../images/icos/rating-planedia.png);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+.rating-best-place {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../images/icos/rating-planedia-inative.png);
+
+    &.active {
+        background-image: url(../images/icos/rating-planedia.png);
+    }
+}
+
+

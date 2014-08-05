@@ -1,0 +1,62 @@
+/* line 4, ../../sass/ui/packs.scss */
+.packs {
+  float: left;
+  border-top: 1px solid #ededed;
+  margin: 1.3125em 0 0;
+  width: 100%;
+  padding-top: 2.5em;
+}
+/* line 11, ../../sass/ui/packs.scss */
+.packs .sub-title {
+  margin-bottom: 0.625em;
+}
+/* line 15, ../../sass/ui/packs.scss */
+.packs .rating {
+  margin-top: 0px;
+}
+/* line 19, ../../sass/ui/packs.scss */
+.packs .img-packs {
+  margin-left: 0;
+}
+
+/* line 24, ../../sass/ui/packs.scss */
+.list-packs {
+  float: left;
+  width: 100%;
+  border: 2px solid #f7f7f7;
+  padding: 1.25em;
+  margin: 15px 0 0;
+}
+/* line 31, ../../sass/ui/packs.scss */
+.list-packs .sub-title {
+  margin-bottom: 0;
+}
+/* line 35, ../../sass/ui/packs.scss */
+.list-packs .description {
+  float: left;
+  clear: both;
+  margin: 0;
+}
+/* line 40, ../../sass/ui/packs.scss */
+.list-packs .description p {
+  margin-bottom: 0;
+  font-size: 0.875em;
+}
+/* line 46, ../../sass/ui/packs.scss */
+.list-packs .btn {
+  display: block;
+}
+/* line 50, ../../sass/ui/packs.scss */
+.list-packs .price {
+  text-align: right;
+}
+/* line 53, ../../sass/ui/packs.scss */
+.list-packs .price span {
+  font-size: 0.75em;
+}
+/* line 58, ../../sass/ui/packs.scss */
+.list-packs .price-pack {
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 0.3125em;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Teste Planedia</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<section class="timeline">
+
+	<header class="header-timeline ">
+		<a class="edit-name-timeline edit" href="" title="Edit name"><i class="fa fa-pencil"></i></a>
+
+		<input type="text" value="" placeholder="Nome da Timeline" class="name-timeline bg-none" disabled="true">
+
+		<b class="settings-timeline" id="settings-timeline"></b>
+	</header>
+	
+	<!-- Exibir esse box, quando usuário clica na engrenagem / #settings-timeline-->
+	<div class="tooltip tooltip-settings top">
+		<a href="#">New timeline</a>
+		<a href="#">New timeline</a>
+		<a href="#">New timeline</a>
+	</div>
+
+	<ul class="content-timeline">
+
+		<li class="item-content">
+			<span class="title-coutry">Brasil</span>
+			<div>
+				<a href="" class="remove-item"><i class="fa fa-trash-o"></i></a>
+				<a href="" class="insert-nota"><i class="fa fa-pencil-square-o"></i></a>
+				<div class="tooltip-notas">
+					<div class="tooltip">
+						<div class="content-tooltip">
+							<textarea placeholder="Insira uma observação" id="" cols="30" rows="10"></textarea>
+						</div>
+						<div class="footer-tooltip">
+							<a href="#" class="fright link cancel-tooltip">close</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="list-citys">
+				<p class="title-place"><a href="#">Rio de Janeiro</a></p>
+
+				<ul class="sub-content-timeline">
+					<li ng-repeat="point in place.points">
+						<a href="{{ point.url }}">
+							<span>
+								<!-- Exibir o icone de acordo com tipo do point -->
+								<i class="flaticon-i6 ico-type-point ico-type-bad" ng-if="point.type == 'hotel'"></i>
+								<i class="fa fa-camera ico-type-point" ng-if="point.type == 'poi'"></i>
+								Copacabana Palace
+							</span>
+						</a>
+						
+						<a href="" class="remove-item"><i class="fa fa-trash-o"></i></a>
+
+						<div class="more-info-point tooltip">
+							<img src="http://planedia.s3.amazonaws.com/points/2374/islas-del-rosario-rosario-islands-6975-thumbnail.jpg" alt="" />
+							<div class="content-more-info">
+								<h3 class="title">copacabana palace</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat architecto quidem commodi tenetur praesentium delectus a atque, exercitationem provident explicabo quod est totam, magnam quisquam. Ipsum aspernatur, omnis vitae.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<a href="#" class="btn primary large">add hotel or atractions<b class="ico-more">+</b></a>
+
+			<!-- TOOLTIP -->
+			<div class="tooltip-timeline">
+				<div class="tooltip add-hotel top">
+					<div class="content-tooltip">
+						<b class="title-tooltip">find hotel or atractions</b>
+
+						<input type="text" placeholder="find hotels, places....">
+						<div class="autocomplete"></div>
+
+						<div class="suggestions-list">
+							<p class="suggestions title">Hotels sugestions</p>
+							<ul class="suggestions suggestions-list-hotel"></ul>
+
+							<p class="suggestions title">attractions sugestions</p>
+							<ul class="suggestions suggestions-list-cities"></ul>
+						</div>
+
+					</div>
+					<div class="footer-tooltip">
+						<a href="#" class="fleft link cancel-tooltip">cancel</a>
+						<a href="" class="btn fright">add</a>
+					</div>
+				</div>
+			</div>
+			<!-- / TOOLTIP -->
+
+		</div>
+	</li>
+	<li class="last-item item-content" ng-if="show_add_button">
+		<div class="add-new-place">
+			<p class="title-place">
+				<a class="btn large">add place</a>
+
+				<!-- TOOLTIP -->
+				<div class="tooltip-timeline">
+					<div class="tooltip">
+						<div class="content-tooltip">
+							<b class="title-tooltip">find place</b>
+							
+							<input type="text" placeholder="ex: Rio de janeiro">
+							<div class="autocomplete"></div>
+
+							<p class="suggestions title">city sugestions</p>
+							<ul class="suggestions suggestions-list-places">
+								<!-- Listagem das 6 primeiras cidades exibidas -->
+							</ul>
+
+						</div>
+						<div class="footer-tooltip">
+							<a href="#" class="fleft link cancel-tooltip">cancel</a>
+							<a href="" class="fright btn" >add</a>
+						</div>
+					</div>
+				</div>
+			<!-- /TOOLTIP -->
+			</p>
+		</div>
+	</li>
+</ul>
+</section>
+
+</body>
+</html>

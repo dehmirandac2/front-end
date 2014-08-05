@@ -1,0 +1,581 @@
+/***************************************************************************
+	TIMLINE
+	**************************************************/
+/* line 7, ../../sass/core/timeline.scss */
+.timeline {
+  width: 20%;
+  height: 100%;
+  padding: 20px;
+  background: #095a66;
+  color: white;
+  font-size: 0.875em;
+  font-weight: 400;
+  position: fixed;
+  left: 0px;
+  z-index: 9998;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+/* line 21, ../../sass/core/timeline.scss */
+.timeline.timeline-empty {
+  background: #f5f5f5;
+}
+/* line 24, ../../sass/core/timeline.scss */
+.timeline.timeline-empty .balloon {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -1152px no-repeat;
+  width: 104px;
+  height: 137px;
+  display: block;
+  margin: 90px auto;
+  margin-bottom: 10px;
+}
+/* line 33, ../../sass/core/timeline.scss */
+.timeline.timeline-empty p {
+  font-weight: bold;
+  font-size: 1.125em;
+  color: #0a0a0a;
+  text-align: center;
+  margin-bottom: 0px;
+}
+/* line 41, ../../sass/core/timeline.scss */
+.timeline.timeline-empty .btn {
+  font-size: 1em !important;
+  margin-top: 10px;
+}
+/* line 47, ../../sass/core/timeline.scss */
+.timeline .edit-name-timeline {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+}
+/* line 52, ../../sass/core/timeline.scss */
+.timeline .edit-name-timeline.check {
+  display: none;
+}
+/* line 57, ../../sass/core/timeline.scss */
+.timeline .input-name {
+  display: none;
+}
+/* line 61, ../../sass/core/timeline.scss */
+.timeline .header-timeline {
+  background: #2c3e50;
+  padding: 15px 20px;
+  margin: -20px -20px 50px;
+  position: fixed;
+  width: 20%;
+  height: 60px;
+  z-index: 9998;
+}
+/* line 70, ../../sass/core/timeline.scss */
+.timeline .header-timeline p {
+  margin-bottom: 0px;
+  font-size: 1em;
+  padding-left: 20px;
+}
+/* line 76, ../../sass/core/timeline.scss */
+.timeline .header-timeline input[type="text"] {
+  border-radius: 5px;
+  -ms-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-size: 1em;
+  height: 30px;
+  padding: 0em 0 0em .5em;
+  background: #095a66;
+  color: #FFF;
+  border: none;
+  width: 90%;
+  margin-left: 20px;
+}
+/* line 87, ../../sass/core/timeline.scss */
+.timeline .header-timeline input[type="text"].bg-none {
+  background: none;
+}
+/* line 91, ../../sass/core/timeline.scss */
+.timeline .header-timeline input[type="text"].date-trip {
+  width: 11%;
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -5431px no-repeat;
+  margin-left: 5px;
+  cursor: pointer;
+  color: transparent;
+  position: absolute;
+  right: 40px;
+  top: 16px;
+}
+/* line 103, ../../sass/core/timeline.scss */
+.timeline .header-timeline .btn {
+  font-size: 0.75em;
+  margin: 15px 0 -5px 0;
+  padding: 0.625em 0.625em;
+}
+/* line 109, ../../sass/core/timeline.scss */
+.timeline .header-timeline:after {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(5, 54, 61, 0);
+  border-top-color: #2c3e50;
+  border-width: 13px;
+  left: 50%;
+  margin-left: -15px;
+}
+/* line 125, ../../sass/core/timeline.scss */
+.timeline .btn {
+  font-size: 0.75em;
+  display: block;
+  margin-bottom: .5em;
+  cursor: pointer;
+}
+/* line 132, ../../sass/core/timeline.scss */
+.timeline .settings-timeline {
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -5840px no-repeat;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+/* line 142, ../../sass/core/timeline.scss */
+.timeline .remove-item {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  display: none;
+  font-size: 13px;
+  z-index: 9;
+}
+/* line 153, ../../sass/core/timeline.scss */
+.timeline .remove-item .fa-trash-o {
+  color: #29a1b2;
+}
+/* line 158, ../../sass/core/timeline.scss */
+.timeline .insert-nota {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  display: none;
+  font-size: 13px;
+  z-index: 9;
+}
+/* line 169, ../../sass/core/timeline.scss */
+.timeline .insert-nota .fa-pencil-square-o {
+  color: #29a1b2;
+}
+/* line 174, ../../sass/core/timeline.scss */
+.timeline .list-citys {
+  position: relative;
+}
+/* line 179, ../../sass/core/timeline.scss */
+.timeline ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+/* line 183, ../../sass/core/timeline.scss */
+.timeline ::-webkit-input-placeholder {
+  color: white;
+}
+/* line 187, ../../sass/core/timeline.scss */
+.timeline :-ms-input-placeholder {
+  color: white;
+}
+/* line 192, ../../sass/core/timeline.scss */
+.timeline .step1 {
+  margin-left: 28px;
+  height: 15px;
+}
+/* line 196, ../../sass/core/timeline.scss */
+.timeline .step1 .btn {
+  margin-top: -10px;
+}
+/* line 201, ../../sass/core/timeline.scss */
+.timeline #step-one {
+  top: 155px !important;
+}
+
+/* line 208, ../../sass/core/timeline.scss */
+.content-timeline {
+  margin-top: 90px;
+  padding-top: 20px;
+  background: url("../images/icos/ico-item-content.png") 7px 0 repeat-y;
+}
+/* line 213, ../../sass/core/timeline.scss */
+.content-timeline .item-content {
+  margin-bottom: 15px;
+  position: relative;
+  padding: 0px 0 35px 28px;
+}
+/* line 218, ../../sass/core/timeline.scss */
+.content-timeline .item-content.last-item {
+  margin-top: -25px;
+  padding-bottom: 0;
+  height: 15px;
+}
+/* line 223, ../../sass/core/timeline.scss */
+.content-timeline .item-content.last-item .btn {
+  margin-top: -10px;
+}
+/* line 230, ../../sass/core/timeline.scss */
+.content-timeline .item-content.editable:hover {
+  cursor: ns-resize;
+}
+/* line 233, ../../sass/core/timeline.scss */
+.content-timeline .item-content.editable:hover .remove-item {
+  display: block;
+}
+/* line 237, ../../sass/core/timeline.scss */
+.content-timeline .item-content.editable:hover .insert-nota {
+  display: block;
+}
+/* line 241, ../../sass/core/timeline.scss */
+.content-timeline .item-content.editable:hover:after {
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  display: block;
+  top: 4px;
+  left: -20px;
+  content: "";
+  background: url("../images/icos/ico-sort.png") no-repeat;
+}
+/* line 256, ../../sass/core/timeline.scss */
+.content-timeline .ver-mais {
+  text-align: center;
+  display: block;
+  margin: 15px 0 0px;
+  color: #333;
+  font-size: 0.875em;
+  text-decoration: underline;
+}
+/* line 269, ../../sass/core/timeline.scss */
+.content-timeline .ico-flight,
+.content-timeline .ico-bus,
+.content-timeline .ico-car,
+.content-timeline .ico-bus,
+.content-timeline .ico-train {
+  display: inline-block;
+  margin: -2px 5px;
+  width: 15px;
+  height: 15px;
+}
+/* line 276, ../../sass/core/timeline.scss */
+.content-timeline .ico-flight {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -6092px no-repeat;
+}
+/* line 280, ../../sass/core/timeline.scss */
+.content-timeline .ico-car {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -6064px no-repeat;
+}
+/* line 284, ../../sass/core/timeline.scss */
+.content-timeline .ico-bus {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -6034px no-repeat;
+}
+/* line 288, ../../sass/core/timeline.scss */
+.content-timeline .ico-train {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -6122px no-repeat;
+}
+/* line 292, ../../sass/core/timeline.scss */
+.content-timeline .sub-content-timeline {
+  margin: 0 0 20px 0;
+}
+/* line 295, ../../sass/core/timeline.scss */
+.content-timeline .sub-content-timeline li {
+  list-style: disc;
+  margin: 0 0 10px -4px;
+  padding: 5px 15px 5px 7px;
+  position: relative;
+  border: none;
+}
+/* line 302, ../../sass/core/timeline.scss */
+.content-timeline .sub-content-timeline li a {
+  color: #FFF;
+}
+/* line 307, ../../sass/core/timeline.scss */
+.content-timeline .sub-content-timeline .btn {
+  margin: 15px 0 -10px 0;
+}
+/* line 312, ../../sass/core/timeline.scss */
+.content-timeline .content-transports {
+  margin: 20px 0 20px 0;
+}
+/* line 315, ../../sass/core/timeline.scss */
+.content-timeline .content-transports input {
+  text-transform: uppercase;
+}
+/* line 320, ../../sass/core/timeline.scss */
+.content-timeline .content-transports .btn {
+  margin: 15px 0 10px 0;
+}
+
+/* line 330, ../../sass/core/timeline.scss */
+.tooltip-settings {
+  left: 10.5% !important;
+  top: 95px !important;
+  width: 135px;
+  display: none;
+  text-align: right !important;
+  position: fixed !important;
+}
+/* line 338, ../../sass/core/timeline.scss */
+.tooltip-settings a {
+  display: block;
+  margin: 0 0 0.625em 0;
+  color: #555555;
+}
+/* line 344, ../../sass/core/timeline.scss */
+.tooltip-settings.top:after, .tooltip-settings.top:before {
+  left: 80% !important;
+}
+
+/* line 352, ../../sass/core/timeline.scss */
+.tooltip-timeline .tooltip {
+  max-width: 235px;
+}
+/* line 356, ../../sass/core/timeline.scss */
+.tooltip-timeline .error {
+  color: #C93131;
+  font-size: 12px;
+  margin-top: -12px;
+  width: 90%;
+  text-align: center;
+}
+/* line 364, ../../sass/core/timeline.scss */
+.tooltip-timeline .suggestions {
+  margin-bottom: 0px;
+}
+/* line 367, ../../sass/core/timeline.scss */
+.tooltip-timeline .suggestions.title {
+  font-size: 0.9375em;
+}
+
+/* line 374, ../../sass/core/timeline.scss */
+.content-ballon.fixed {
+  position: fixed;
+  left: 10px;
+  width: 17%;
+}
+
+/* line 382, ../../sass/core/timeline.scss */
+.add-new-place {
+  margin-top: 50px;
+}
+
+/* line 386, ../../sass/core/timeline.scss */
+.item-place {
+  position: inherit !important;
+}
+
+/* line 391, ../../sass/core/timeline.scss */
+.last-button {
+  margin-bottom: 1.875em !important;
+}
+
+/* line 396, ../../sass/core/timeline.scss */
+.tooltip-name-timeline {
+  width: 260px;
+  padding: 7px 8px 8px 0 !important;
+}
+/* line 400, ../../sass/core/timeline.scss */
+.tooltip-name-timeline:before, .tooltip-name-timeline:after {
+  left: 25% !important;
+}
+
+/* line 406, ../../sass/core/timeline.scss */
+.show-settings-timeline {
+  display: none;
+  margin-top: -5px;
+}
+
+/* line 412, ../../sass/core/timeline.scss */
+.date-timeline {
+  position: absolute;
+  left: 78%;
+  top: 39%;
+  color: #29a1b2;
+  cursor: pointer;
+}
+
+/* line 420, ../../sass/core/timeline.scss */
+.add-date-timeline {
+  left: 18%;
+  top: 55px;
+  position: fixed !important;
+}
+/* line 426, ../../sass/core/timeline.scss */
+.add-date-timeline.left:before, .add-date-timeline.left:after {
+  top: 8% !important;
+}
+/* line 431, ../../sass/core/timeline.scss */
+.add-date-timeline .ui-datepicker {
+  border: none;
+}
+/* line 435, ../../sass/core/timeline.scss */
+.add-date-timeline input[type="text"] {
+  width: 20% !important;
+  text-align: center;
+}
+/* line 439, ../../sass/core/timeline.scss */
+.add-date-timeline input[type="text"].disabled {
+  background: none;
+  border: none;
+}
+/* line 445, ../../sass/core/timeline.scss */
+.add-date-timeline .title {
+  font-weight: 600;
+  font-size: 14px;
+}
+/* line 449, ../../sass/core/timeline.scss */
+.add-date-timeline .title span {
+  font-weight: 300;
+  display: block;
+  font-size: 12px;
+}
+/* line 456, ../../sass/core/timeline.scss */
+.add-date-timeline .box-timeline-date {
+  border-bottom: 1px solid #ECECEC;
+  margin: 0 -20px;
+  padding: 0 20px;
+}
+/* line 462, ../../sass/core/timeline.scss */
+.add-date-timeline .not-date-trip {
+  font-size: 14px;
+  margin: 15px 0 0;
+}
+
+/* line 470, ../../sass/core/timeline.scss */
+.list-transport {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+/* line 478, ../../sass/core/timeline.scss */
+.tooltip-timeline-details .tooltip.bottom {
+  bottom: 35px !important;
+}
+/* line 482, ../../sass/core/timeline.scss */
+.tooltip-timeline-details .tooltip:after, .tooltip-timeline-details .tooltip:before {
+  left: 25% !important;
+}
+/* line 486, ../../sass/core/timeline.scss */
+.tooltip-timeline-details .tooltip .title-tooltip {
+  margin-bottom: 10px;
+  text-transform: initial;
+}
+/* line 491, ../../sass/core/timeline.scss */
+.tooltip-timeline-details .tooltip p {
+  font-size: 0.9375em;
+  font-weight: 700;
+  text-transform: normal;
+  margin-bottom: 3px;
+  text-transform: initial;
+}
+/* line 498, ../../sass/core/timeline.scss */
+.tooltip-timeline-details .tooltip p span {
+  font-weight: 400;
+  font-size: 0.875em;
+  margin-left: 5px;
+}
+/* line 503, ../../sass/core/timeline.scss */
+.tooltip-timeline-details .tooltip p span.no-inline {
+  display: block;
+  margin-left: 0px;
+  color: #555555;
+}
+
+/* line 513, ../../sass/core/timeline.scss */
+.more-info-point {
+  left: 85%;
+  width: 360px;
+  height: 103px;
+  top: -40px;
+}
+/* line 519, ../../sass/core/timeline.scss */
+.more-info-point img {
+  max-width: 135px;
+  margin: -15px  0  0 -15px;
+  border-radius: 3px 0px 0px 3px;
+  position: relative;
+  z-index: 9;
+  float: left;
+}
+/* line 528, ../../sass/core/timeline.scss */
+.more-info-point .content-more-info {
+  float: left;
+  margin-left: 10px;
+  max-width: 195px;
+}
+/* line 534, ../../sass/core/timeline.scss */
+.more-info-point .title {
+  display: block;
+  font-size: 0.9375em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+/* line 541, ../../sass/core/timeline.scss */
+.more-info-point p {
+  font-size: 12px;
+  height: 55px;
+  overflow: hidden !important;
+}
+
+/* line 555, ../../sass/core/timeline.scss */
+.public-timeline {
+  position: relative;
+}
+/* line 558, ../../sass/core/timeline.scss */
+.public-timeline:after {
+  background: url("../images/icos/ico-title-place.png") left top no-repeat;
+  margin: 0px 0 0px -1px;
+  position: absolute;
+  bottom: 0px;
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+/* line 569, ../../sass/core/timeline.scss */
+.public-timeline .item-content {
+  padding-bottom: 20px;
+}
+
+/* line 574, ../../sass/core/timeline.scss */
+.ico-type-point {
+  margin-right: 5px;
+  font-size: 11px;
+}
+/* line 578, ../../sass/core/timeline.scss */
+.ico-type-point.ico-type-bad {
+  font-size: 14px;
+}
+
+/* line 585, ../../sass/core/timeline.scss */
+.title-place {
+  font-size: 16px;
+  font-weight: 600;
+  background: url("../images/icos/ico-title-place.png") left top no-repeat;
+  margin: -20px 0 10px -29px;
+  padding: 2px 0 2px 30px;
+}
+/* line 592, ../../sass/core/timeline.scss */
+.title-place a {
+  color: #FFF;
+}
+
+/* line 597, ../../sass/core/timeline.scss */
+.title-coutry {
+  font-size: 0.75em;
+  color: #05363d;
+  position: absolute;
+  top: -10px;
+  left: 30px;
+}

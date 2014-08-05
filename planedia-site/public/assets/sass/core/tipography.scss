@@ -1,0 +1,70 @@
+@import "base/mixins";
+@import "base/variables";
+
+// TEXT
+p {
+	font-size: $default_font_size;
+	line-height: 1.5em;
+	margin-bottom: em(18px);
+}
+
+strong {
+	font-weight: 700;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.center {
+	text-align: center;
+}
+
+// LINK
+a { 
+	color: $blue_clear;
+	text-decoration: none;
+
+	&.remove {
+		color: $red_error;
+
+		&:hover {
+			color: $red_error;
+		}
+	}
+}
+
+.link-secondary {
+	color: $color_green;
+}
+
+// TITLES
+.title-social {
+	font-weight: 700;
+	font-size: em(16px);
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 1em 0 .5em 0;
+}
+
+.sub-title {
+	color: #0a0a0a;
+	font-size: em(24px);
+	line-height: 1.5em;
+	font-weight: 700;
+}
+
+.title-search {
+	font-weight: 400;
+	font-size: em(18px);
+	margin: em(30px) 0;
+}
+
+.not-empty-search {
+	margin-top: em(40px);
+}
+
+.description-best-place {
+	margin-top: 20px;
+}

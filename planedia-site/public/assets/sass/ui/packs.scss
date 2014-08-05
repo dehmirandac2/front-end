@@ -1,0 +1,63 @@
+@import "base/mixins";
+@import "base/variables";
+
+.packs {
+	float: left;
+	border-top: 1px solid #ededed;
+	margin: em(21px) 0 0;
+	width: 100%;
+	padding-top: em(40px);
+
+	.sub-title {
+		margin-bottom: em(10px);
+	}
+
+	.rating {
+		margin-top: 0px;
+	}
+
+	.img-packs {
+		margin-left: 0;
+	}
+}
+
+.list-packs {
+	float: left;
+	width: 100%;
+	border: 2px solid #f7f7f7;
+	padding: em(20px);
+	margin: 15px 0 0;
+
+	.sub-title {
+		margin-bottom: em(0px);
+	}
+
+	.description {
+		float: left;
+		clear: both;
+		margin: 0;
+
+		p {
+			margin-bottom: em(0px);
+			font-size: em(14px);
+		}
+	}
+
+	.btn {
+		display: block;
+	}
+
+	.price {
+		text-align: right;
+
+		span {
+			font-size: em(12px);
+		}
+	}
+
+	.price-pack {
+		font-weight: 400;
+		font-size: em(24px);
+		margin-bottom: em(5px);
+	}
+}

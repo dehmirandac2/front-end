@@ -1,0 +1,75 @@
+/* line 5, ../../sass/core/tipography.scss */
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 1.125em;
+}
+
+/* line 11, ../../sass/core/tipography.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 15, ../../sass/core/tipography.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 19, ../../sass/core/tipography.scss */
+.center {
+  text-align: center;
+}
+
+/* line 24, ../../sass/core/tipography.scss */
+a {
+  color: #29a1b2;
+  text-decoration: none;
+}
+/* line 28, ../../sass/core/tipography.scss */
+a.remove {
+  color: #f3643c;
+}
+/* line 31, ../../sass/core/tipography.scss */
+a.remove:hover {
+  color: #f3643c;
+}
+
+/* line 37, ../../sass/core/tipography.scss */
+.link-secondary {
+  color: #91c931;
+}
+
+/* line 42, ../../sass/core/tipography.scss */
+.title-social {
+  font-weight: 700;
+  font-size: 1em;
+  display: block;
+  float: left;
+  width: 100%;
+  margin: 1em 0 .5em 0;
+}
+
+/* line 51, ../../sass/core/tipography.scss */
+.sub-title {
+  color: #0a0a0a;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 700;
+}
+
+/* line 58, ../../sass/core/tipography.scss */
+.title-search {
+  font-weight: 400;
+  font-size: 1.125em;
+  margin: 1.875em 0;
+}
+
+/* line 64, ../../sass/core/tipography.scss */
+.not-empty-search {
+  margin-top: 2.5em;
+}
+
+/* line 68, ../../sass/core/tipography.scss */
+.description-best-place {
+  margin-top: 20px;
+}

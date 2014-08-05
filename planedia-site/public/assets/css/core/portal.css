@@ -1,0 +1,550 @@
+/***************************************************************************
+	RESET
+	**************************************************/
+/* line 8, ../../sass/core/portal.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 16, ../../sass/core/portal.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide {
+  display: none !important;
+}
+
+/* line 20, ../../sass/core/portal.scss */
+ng\:form {
+  display: block;
+}
+
+/***************************************************************************
+	REGRAS GERAIS
+	**************************************************/
+/* line 31, ../../sass/core/portal.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #555555;
+  height: 100%;
+  min-width: 1080px;
+}
+
+/* line 40, ../../sass/core/portal.scss */
+.fleft {
+  float: left !important;
+}
+
+/* line 41, ../../sass/core/portal.scss */
+.fright {
+  float: right !important;
+}
+
+/* line 42, ../../sass/core/portal.scss */
+.block {
+  display: block !important;
+}
+
+/* line 43, ../../sass/core/portal.scss */
+.left-0 {
+  margin-left: 0 !important;
+}
+
+/* line 44, ../../sass/core/portal.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/***************************************************************************
+	HEADER
+	**************************************************/
+/* line 49, ../../sass/core/portal.scss */
+.planedia-logo {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -1937px no-repeat;
+  width: 161px;
+  height: 51px;
+  float: left;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+
+/* line 57, ../../sass/core/portal.scss */
+.header {
+  background: #2c3e50;
+  width: 100%;
+  height: 51px;
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+  left: 0;
+}
+/* line 66, ../../sass/core/portal.scss */
+.header a {
+  color: white;
+}
+/* line 70, ../../sass/core/portal.scss */
+.header .sing-up {
+  float: right;
+  margin: 0.625em 1.875em 0.625em 30px;
+}
+
+/* line 76, ../../sass/core/portal.scss */
+.search-places {
+  float: left;
+  width: 33%;
+}
+/* line 80, ../../sass/core/portal.scss */
+.search-places input[type="text"] {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 0.875em;
+  height: 30px;
+  padding: 0 1em;
+  background: #1f2c39;
+  color: #289daf;
+  border: none;
+  width: 87%;
+  float: left;
+  margin: 12px 15px;
+}
+/* line 93, ../../sass/core/portal.scss */
+.search-places ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #289daf;
+}
+/* line 97, ../../sass/core/portal.scss */
+.search-places ::-webkit-input-placeholder {
+  color: #289daf;
+}
+/* line 101, ../../sass/core/portal.scss */
+.search-places :-ms-input-placeholder {
+  color: #289daf;
+}
+
+/* line 107, ../../sass/core/portal.scss */
+.landing .search-places {
+  display: none;
+}
+
+/***************************************************************************
+	NAV
+	**************************************************/
+/* line 115, ../../sass/core/portal.scss */
+.nav {
+  font-size: 1.25em;
+  font-weight: 200;
+  float: left;
+  overflow: hidden;
+  margin: 10px 0;
+}
+/* line 122, ../../sass/core/portal.scss */
+.nav li {
+  display: inline-block;
+  float: left;
+}
+/* line 126, ../../sass/core/portal.scss */
+.nav li a {
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 0 0.625em 0.3125em 0.9375em;
+  background: url("../images/icos/separator-nav.png") left no-repeat;
+  line-height: 31px;
+}
+/* line 135, ../../sass/core/portal.scss */
+.nav .world-cup-2014 a {
+  background: url("../images/wc-icon.png") left no-repeat;
+  padding-left: 37px;
+  line-height: 31px;
+}
+/* line 141, ../../sass/core/portal.scss */
+.nav .show-my-trips {
+  width: 400px;
+  height: 385px !important;
+  padding: 10px 0px 0;
+}
+/* line 146, ../../sass/core/portal.scss */
+.nav .show-my-trips .content-my-trips {
+  overflow-y: scroll;
+  height: 365px !important;
+}
+/* line 151, ../../sass/core/portal.scss */
+.nav .show-my-trips li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+/* line 156, ../../sass/core/portal.scss */
+.nav .show-my-trips li img {
+  width: 100%;
+}
+/* line 160, ../../sass/core/portal.scss */
+.nav .show-my-trips li p {
+  margin-bottom: 0px;
+}
+/* line 163, ../../sass/core/portal.scss */
+.nav .show-my-trips li p.description {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.75em;
+}
+/* line 172, ../../sass/core/portal.scss */
+.nav .show-my-trips li a {
+  color: #29a1b2;
+  line-height: 1.5em;
+  padding: 0px;
+  background: none !important;
+}
+/* line 178, ../../sass/core/portal.scss */
+.nav .show-my-trips li a.view-on-map-link {
+  font-size: 13px;
+}
+/* line 185, ../../sass/core/portal.scss */
+.nav .show-my-trips.top:before, .nav .show-my-trips.top:after {
+  left: 15% !important;
+}
+
+/* line 192, ../../sass/core/portal.scss */
+.user {
+  float: right;
+  position: relative;
+  margin: 8px 20px;
+  cursor: pointer;
+}
+/* line 198, ../../sass/core/portal.scss */
+.user img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin: 0 20px 0 0;
+  display: inline-block;
+}
+/* line 206, ../../sass/core/portal.scss */
+.user p {
+  float: left;
+  margin: 5px 10px 0;
+  color: white;
+}
+/* line 212, ../../sass/core/portal.scss */
+.user .arrow {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -6443px no-repeat;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  width: 7px;
+  height: 8px;
+}
+
+/* line 222, ../../sass/core/portal.scss */
+.edit-user {
+  width: 20%;
+  padding: 0 0 10px;
+  border-radius: 3px;
+  position: absolute;
+  background: #F5F5F5;
+  border: 2px solid #E8E8E8;
+  color: #555;
+  z-index: 9999;
+  top: 50px;
+  right: 0px;
+  display: none;
+}
+/* line 235, ../../sass/core/portal.scss */
+.edit-user a {
+  display: block;
+  color: #555555;
+  padding: 10px;
+  margin: 0;
+}
+/* line 241, ../../sass/core/portal.scss */
+.edit-user a:hover {
+  color: #333;
+  background: #ffffff;
+  font-weight: 600;
+}
+/* line 247, ../../sass/core/portal.scss */
+.edit-user a.active {
+  color: #333;
+  background: #ffffff;
+  font-weight: 600;
+}
+
+/* line 255, ../../sass/core/portal.scss */
+.name-user {
+  color: #FFF;
+  float: left;
+  margin: 8px 15px;
+}
+
+/***************************************************************************
+	Publicidades
+	**************************************************/
+/* line 264, ../../sass/core/portal.scss */
+.publicidade-header {
+  float: left;
+  width: 85%;
+  padding: 1.25em 0;
+  margin: 1.875em 0;
+}
+/* line 270, ../../sass/core/portal.scss */
+.publicidade-header .boo-widget.custom {
+  margin: 0 auto !important;
+  z-index: 3 !important;
+}
+
+/***************************************************************************
+	Search Results
+	**************************************************/
+/* line 279, ../../sass/core/portal.scss */
+.filter {
+  float: left;
+  width: 100%;
+  margin: 1.25em 0;
+}
+/* line 284, ../../sass/core/portal.scss */
+.filter li {
+  float: left;
+  margin: 0 0.625em 0.625em 0;
+  padding: 0px 0.625em 0px 0;
+  border-right: 1px solid #f8f8f8;
+  line-height: 1.5em;
+}
+/* line 291, ../../sass/core/portal.scss */
+.filter li:last-child {
+  border: none;
+}
+/* line 296, ../../sass/core/portal.scss */
+.filter .active {
+  color: #0a0a0a !important;
+}
+
+/* line 302, ../../sass/core/portal.scss */
+.search-list {
+  border: 1px solid #f2f2f2;
+  padding: 1.25em;
+  float: left;
+  width: 100%;
+  margin-bottom: 1.875em;
+}
+/* line 309, ../../sass/core/portal.scss */
+.search-list .row {
+  padding: 0;
+}
+/* line 313, ../../sass/core/portal.scss */
+.search-list .thumb {
+  margin-left: 0;
+  padding-bottom: 30px;
+}
+/* line 317, ../../sass/core/portal.scss */
+.search-list .thumb img {
+  width: 100%;
+}
+/* line 323, ../../sass/core/portal.scss */
+.search-list .sub-title b {
+  font-weight: 300;
+  font-size: 0.8125em;
+}
+/* line 330, ../../sass/core/portal.scss */
+.search-list .friends a {
+  margin: 0.3125em 0 0.5em 0.3125em;
+  position: relative;
+  float: left;
+}
+/* line 336, ../../sass/core/portal.scss */
+.search-list .friends img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+/* line 343, ../../sass/core/portal.scss */
+.search-list .pictures {
+  float: left;
+  max-width: 70%;
+  margin-top: -5px;
+}
+/* line 349, ../../sass/core/portal.scss */
+.search-list .tooltip {
+  padding: 10px 5px 0 15px;
+  min-width: 180px;
+}
+/* line 353, ../../sass/core/portal.scss */
+.search-list .tooltip:after, .search-list .tooltip:before {
+  left: 10% !important;
+}
+/* line 357, ../../sass/core/portal.scss */
+.search-list .tooltip p {
+  font-size: 0.875em;
+}
+/* line 362, ../../sass/core/portal.scss */
+.search-list .more-list {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  bottom: -20px;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/***************************************************************************
+	Pagination
+	**************************************************/
+/* line 375, ../../sass/core/portal.scss */
+.pagination {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+/* line 380, ../../sass/core/portal.scss */
+.pagination li {
+  display: inline-block;
+  padding: 10px 10px 0 0;
+}
+/* line 385, ../../sass/core/portal.scss */
+.pagination .active {
+  color: #0a0a0a !important;
+}
+/* line 389, ../../sass/core/portal.scss */
+.pagination .disabled {
+  color: #e7e7e7;
+}
+
+/***************************************************************************
+	HOME
+	**************************************************/
+/* line 398, ../../sass/core/portal.scss */
+.not-logged {
+  float: left;
+  width: 100%;
+}
+/* line 402, ../../sass/core/portal.scss */
+.not-logged .row {
+  margin: 50px auto;
+  width: 90%;
+  padding: 0;
+}
+/* line 408, ../../sass/core/portal.scss */
+.not-logged .title {
+  font-weight: 400;
+  font-size: 1.875em;
+  letter-spacing: -1.5px;
+  color: #2799AA;
+  margin-bottom: .6em;
+}
+/* line 416, ../../sass/core/portal.scss */
+.not-logged .video {
+  border-radius: 3px;
+  width: 900px;
+  margin: 0 auto;
+}
+/* line 422, ../../sass/core/portal.scss */
+.not-logged .box {
+  text-align: center;
+  display: block;
+  margin: 0px 0 50px 2%;
+}
+
+/***************************************************************************
+FORMULARIO
+**************************************************/
+/* line 433, ../../sass/core/portal.scss */
+input, select {
+  outline: 0;
+  border: none;
+}
+
+/* line 439, ../../sass/core/portal.scss */
+.msg {
+  padding: 15px 20px;
+  width: 100%;
+  margin: 15px 0;
+}
+/* line 444, ../../sass/core/portal.scss */
+.msg.success {
+  background: #dbf3b1;
+}
+/* line 448, ../../sass/core/portal.scss */
+.msg.error {
+  background: #C93131;
+  color: #FFF;
+}
+
+/***************************************************************************
+	FOOTER
+	**************************************************/
+/* line 458, ../../sass/core/portal.scss */
+.footer-not-timeline .footer {
+  width: 100%;
+  margin-left: 0px;
+}
+/* line 462, ../../sass/core/portal.scss */
+.footer-not-timeline .footer .row {
+  width: 80%;
+}
+
+/* line 467, ../../sass/core/portal.scss */
+.footer {
+  background: #f9f9f9;
+  border-top: 1px solid #e7e7e7;
+  padding: 1.25em 0;
+  float: left;
+  width: 79.6%;
+  margin-left: 20.3%;
+}
+/* line 475, ../../sass/core/portal.scss */
+.footer .row {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 481, ../../sass/core/portal.scss */
+.footer [class^="grid"] {
+  margin-bottom: 2.5em;
+}
+/* line 484, ../../sass/core/portal.scss */
+.footer [class^="grid"] .sub-title {
+  font-size: 1em;
+  margin-bottom: 0.3125em;
+}
+/* line 489, ../../sass/core/portal.scss */
+.footer [class^="grid"] a {
+  display: block;
+  margin-bottom: 0.625em;
+}
+/* line 495, ../../sass/core/portal.scss */
+.footer .planedia-footer {
+  text-align: right;
+}
+/* line 498, ../../sass/core/portal.scss */
+.footer .planedia-footer .sub-title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+/* line 505, ../../sass/core/portal.scss */
+.footer .nav {
+  width: 100%;
+  float: left;
+  padding: 0.625em 0 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 512, ../../sass/core/portal.scss */
+.footer .nav a {
+  color: #2b2b2b;
+  font-size: 0.8125em;
+}
+/* line 518, ../../sass/core/portal.scss */
+.footer .sociais {
+  top: 30px;
+  position: absolute !important;
+}

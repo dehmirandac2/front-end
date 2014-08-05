@@ -1,0 +1,389 @@
+@import "base/mixins";
+@import "base/variables";
+@import "compass/css3";
+
+.list {
+	.description {
+		display: block;
+		margin: em(5px) 0;
+		font-size: em(14px);
+		height: em(40px);
+		line-height: 1.3em;
+		overflow: hidden;
+	}
+
+	.category-hotel {
+		font-size: 13px;
+		width: 100%;
+		float: left;
+		margin: 10px 0;
+	}
+
+	.sub-title {
+		a {
+			float: right;
+			font-size: em(10px);
+			font-weight: 300;
+		}
+	}
+
+	.box-list  {
+		width: 22.8%;
+		margin: 1% 2% 2% 0;
+		float: left;
+		overflow: hidden;
+		background: $color_white;
+		@include box-shadow( 0px 0px 1px 2px #ededed );
+
+		.row {
+			padding: em(10px);
+		}
+
+		&:last-child {
+			margin-right: 0px;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+}
+
+.more-list {
+	float: left;
+	width: 101%;
+	background: #fbfbfb;
+	padding: 10px 0 0;
+	margin: 10px 0 0;
+	@include box-shadow( inset 0px 3px 0px 0px #f4f4f4 );
+
+	a {
+		width: 33%;
+		float: left;
+		height: 30px;
+		text-align: center;
+	}
+
+	.pin {
+		border-bottom: 3px solid $blue_clear;
+	}
+
+	.heart {
+		border-bottom: 3px solid $color_pink;
+	}
+
+	.more {
+		border-bottom: 3px solid $color_green;
+	}
+
+	[class^="ico-"] {
+		display: inline-block;
+		height: 18px;
+		text-align: center;
+		@include image_replacement();
+		display: inline-block;
+	}
+
+	.ico-pin {
+		background: sprite($icon-sprite, pin) no-repeat;
+		width: 12px;
+	}
+
+	.ico-heart {
+		background: sprite($icon-sprite, heart) no-repeat;
+		width: 16px;
+	}
+
+	.ico-more {
+		background: sprite($icon-sprite, more) no-repeat;
+		width: 13px;
+	}
+}
+
+.tabs {
+	margin: auto;
+	width: 70%;
+
+	a {
+		position: relative;
+		background: #FFF;
+		border: 2px solid #ededed;
+		padding: em(10px);
+		border-right: none;
+		float: left;
+		width: 33.3%;
+		text-align: center;
+
+		&.active {
+			color: #2b2b2b;
+		}
+
+		&.active:after, &.active:before {
+			top: 100%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		&.active:after {
+			border-color: rgba(255, 255, 255, 0);
+			border-top-color: #FFF;
+			border-width: 15px;
+			left: 50%;
+			margin-left: -15px;
+		}
+		&.active:before {
+			border-color: rgba(237, 237, 237, 0);
+			border-top-color: #ededed;
+			border-width: 18px;
+			left: 50%;
+			margin-left: -18px;
+		}
+	}
+
+	li {
+		&:last-child {
+			a {
+				border-right: 2px solid #ededed;
+			}
+		}
+	}
+
+}
+
+// Abas
+.content-tabs {
+	width: 100%;
+	margin: 30px 0 90px 0;
+	display: none;
+	float: left;
+}
+
+.content-slider {
+	padding: 0 5px;
+	margin: 0 0 0 2.5%;
+	width: 96% !important;
+}
+
+.nav-tabs {
+	min-width: 100px;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	margin-bottom: 50px;
+
+	a {
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background: #e7e7e7;
+		margin: 0 3px 0;
+		@include image_replacement();
+		display: inline-block;
+
+		&.activeSlide, &:hover {
+			background: $blue_clear;
+		}
+	}
+}
+
+
+.recomendations {
+	background: #f9f9f9;
+	margin-bottom: em(-10px) !important;
+}
+
+.wishlist {
+	margin-left: 0px;
+}
+
+// Best Place
+.list-best-places {
+	float: left;
+	width: 104%;
+	position: relative;
+
+	span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: em(10px);
+		color: #FFF;
+		font-weight: 500;
+		z-index: 1;
+
+		&:after {
+			content: " ";
+			background: #333;
+			opacity: 0.8;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 36px;
+			z-index: -1;
+		}
+	}
+
+	.users-been-here {
+		position: absolute;
+		left: 10px;
+		bottom: 0px;
+		margin: 0 -10px;
+		width: 100%;
+		padding: 10px;
+
+		opacity: 0;
+	    -webkit-transition: opacity .7s;
+	    -moz-transition: opacity .7s;
+	    -o-transition: opacity .7s;
+	    transition: opacity .7s;
+
+		a {
+			margin: 0 9px 15px 5px;
+			float: left;
+
+			img {
+				width: 45px !important;
+				height: 45px;
+				border-radius: 50%;
+				@include box-shadow( 0 0 0 5px rgba(0, 0, 0, 0.5) );
+			}
+		}
+
+		.last-item-checkin {
+			width: 45px !important;
+			height: 45px;
+			border-radius: 50%;
+			@include box-shadow( 0 0 0 5px rgba(0, 0, 0, 0.5) );
+			background: $color_green;
+			color: #FFF;
+			text-align: center;
+			font-weight: 600;
+			font-size: 15px;
+
+			b {
+				margin-top: 5px;
+				display: block;
+				font-size: 12px;
+			}
+		}
+	}
+
+	&.last-best-place {
+		margin-bottom: 50px;
+
+		.panorama-mini {
+			margin-right: 2%;
+		}
+	}
+
+	.square {
+		width: 48%;
+		float: left;
+		margin-right: 17px;
+		position: relative;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.panorama-mini {
+		width: 48%;
+		float: left;
+		margin-bottom: 22px;
+		position: relative;
+		margin-right: 1.5%;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+		}
+
+		.users-been-here {
+			img, .last-item-checkin {
+				width: 30px !important;
+				height: 30px !important;
+				@include box-shadow( 0 0 0 4px rgba(0, 0, 0, 0.5) );
+			}
+		}
+	}
+
+	.grid12 {
+		margin-left: 0 !important;
+	}
+
+	.thumbnail-best-place {
+		.thumbnail {
+			width: 24%;
+		}
+	}
+
+	.thumbnail {
+		width: 23.5%;
+		float: left;
+		margin-right: 1.2%;
+		margin-bottom: 20px;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+
+		.users-been-here {
+			img, .last-item-checkin {
+				width: 25px !important;
+				height: 25px !important;
+				@include box-shadow( 0 0 0 3px rgba(0, 0, 0, 0.5) );
+			}
+
+			a {
+				margin: 0 7px 3px 0;
+			}
+
+			.last-item-checkin {
+				font-weight: 500;
+				font-size: 10px;
+
+				b {
+					margin-top: 2px;
+					display: block;
+					font-size: 7px;
+				}
+			}
+		}
+
+		&:last-child  {
+			margin-right: 0px;
+		}
+	}
+
+	.last-item {
+		margin-right: 0 !important;
+	}
+
+
+	.hover-been-here {
+		&:hover {
+			.users-been-here {
+				opacity: 1;
+			}
+		}
+	}
+
+	.meio-list {
+
+		.square {
+			float: right !important;
+			margin-right: 25px;
+		}
+	}
+}

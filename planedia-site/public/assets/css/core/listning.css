@@ -1,0 +1,385 @@
+/* line 6, ../../sass/core/listning.scss */
+.list .description {
+  display: block;
+  margin: 0.3125em 0;
+  font-size: 0.875em;
+  height: 2.5em;
+  line-height: 1.3em;
+  overflow: hidden;
+}
+/* line 15, ../../sass/core/listning.scss */
+.list .category-hotel {
+  font-size: 13px;
+  width: 100%;
+  float: left;
+  margin: 10px 0;
+}
+/* line 23, ../../sass/core/listning.scss */
+.list .sub-title a {
+  float: right;
+  font-size: 0.625em;
+  font-weight: 300;
+}
+/* line 30, ../../sass/core/listning.scss */
+.list .box-list {
+  width: 22.8%;
+  margin: 1% 2% 2% 0;
+  float: left;
+  overflow: hidden;
+  background: white;
+  -webkit-box-shadow: 0px 0px 1px 2px #ededed;
+  -moz-box-shadow: 0px 0px 1px 2px #ededed;
+  box-shadow: 0px 0px 1px 2px #ededed;
+}
+/* line 38, ../../sass/core/listning.scss */
+.list .box-list .row {
+  padding: 0.625em;
+}
+/* line 42, ../../sass/core/listning.scss */
+.list .box-list:last-child {
+  margin-right: 0px;
+}
+/* line 46, ../../sass/core/listning.scss */
+.list .box-list img {
+  display: block;
+  width: 100%;
+}
+
+/* line 54, ../../sass/core/listning.scss */
+.more-list {
+  float: left;
+  width: 101%;
+  background: #fbfbfb;
+  padding: 10px 0 0;
+  margin: 10px 0 0;
+  -webkit-box-shadow: inset 0px 3px 0px 0px #f4f4f4;
+  -moz-box-shadow: inset 0px 3px 0px 0px #f4f4f4;
+  box-shadow: inset 0px 3px 0px 0px #f4f4f4;
+}
+/* line 62, ../../sass/core/listning.scss */
+.more-list a {
+  width: 33%;
+  float: left;
+  height: 30px;
+  text-align: center;
+}
+/* line 69, ../../sass/core/listning.scss */
+.more-list .pin {
+  border-bottom: 3px solid #29a1b2;
+}
+/* line 73, ../../sass/core/listning.scss */
+.more-list .heart {
+  border-bottom: 3px solid #d7267d;
+}
+/* line 77, ../../sass/core/listning.scss */
+.more-list .more {
+  border-bottom: 3px solid #91c931;
+}
+/* line 81, ../../sass/core/listning.scss */
+.more-list [class^="ico-"] {
+  display: inline-block;
+  height: 18px;
+  text-align: center;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  display: inline-block;
+}
+/* line 89, ../../sass/core/listning.scss */
+.more-list .ico-pin {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -5916px no-repeat;
+  width: 12px;
+}
+/* line 94, ../../sass/core/listning.scss */
+.more-list .ico-heart {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -6153px no-repeat;
+  width: 16px;
+}
+/* line 99, ../../sass/core/listning.scss */
+.more-list .ico-more {
+  background: url('../../images/sprites/icos-s932c2a549c.png') 0 -6334px no-repeat;
+  width: 13px;
+}
+
+/* line 105, ../../sass/core/listning.scss */
+.tabs {
+  margin: auto;
+  width: 70%;
+}
+/* line 109, ../../sass/core/listning.scss */
+.tabs a {
+  position: relative;
+  background: #FFF;
+  border: 2px solid #ededed;
+  padding: 0.625em;
+  border-right: none;
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+/* line 119, ../../sass/core/listning.scss */
+.tabs a.active {
+  color: #2b2b2b;
+}
+/* line 123, ../../sass/core/listning.scss */
+.tabs a.active:after, .tabs a.active:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 133, ../../sass/core/listning.scss */
+.tabs a.active:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #FFF;
+  border-width: 15px;
+  left: 50%;
+  margin-left: -15px;
+}
+/* line 140, ../../sass/core/listning.scss */
+.tabs a.active:before {
+  border-color: rgba(237, 237, 237, 0);
+  border-top-color: #ededed;
+  border-width: 18px;
+  left: 50%;
+  margin-left: -18px;
+}
+/* line 151, ../../sass/core/listning.scss */
+.tabs li:last-child a {
+  border-right: 2px solid #ededed;
+}
+
+/* line 160, ../../sass/core/listning.scss */
+.content-tabs {
+  width: 100%;
+  margin: 30px 0 90px 0;
+  display: none;
+  float: left;
+}
+
+/* line 167, ../../sass/core/listning.scss */
+.content-slider {
+  padding: 0 5px;
+  margin: 0 0 0 2.5%;
+  width: 96% !important;
+}
+
+/* line 173, ../../sass/core/listning.scss */
+.nav-tabs {
+  min-width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 50px;
+}
+/* line 180, ../../sass/core/listning.scss */
+.nav-tabs a {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #e7e7e7;
+  margin: 0 3px 0;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  display: inline-block;
+}
+/* line 189, ../../sass/core/listning.scss */
+.nav-tabs a.activeSlide, .nav-tabs a:hover {
+  background: #29a1b2;
+}
+
+/* line 196, ../../sass/core/listning.scss */
+.recomendations {
+  background: #f9f9f9;
+  margin-bottom: -0.625em !important;
+}
+
+/* line 201, ../../sass/core/listning.scss */
+.wishlist {
+  margin-left: 0px;
+}
+
+/* line 206, ../../sass/core/listning.scss */
+.list-best-places {
+  float: left;
+  width: 104%;
+  position: relative;
+}
+/* line 211, ../../sass/core/listning.scss */
+.list-best-places span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.625em;
+  color: #FFF;
+  font-weight: 500;
+  z-index: 1;
+}
+/* line 221, ../../sass/core/listning.scss */
+.list-best-places span:after {
+  content: " ";
+  background: #333;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  z-index: -1;
+}
+/* line 234, ../../sass/core/listning.scss */
+.list-best-places .users-been-here {
+  position: absolute;
+  left: 10px;
+  bottom: 0px;
+  margin: 0 -10px;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  -webkit-transition: opacity .7s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  transition: opacity .7s;
+}
+/* line 248, ../../sass/core/listning.scss */
+.list-best-places .users-been-here a {
+  margin: 0 9px 15px 5px;
+  float: left;
+}
+/* line 252, ../../sass/core/listning.scss */
+.list-best-places .users-been-here a img {
+  width: 45px !important;
+  height: 45px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+}
+/* line 260, ../../sass/core/listning.scss */
+.list-best-places .users-been-here .last-item-checkin {
+  width: 45px !important;
+  height: 45px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+  background: #91c931;
+  color: #FFF;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+/* line 271, ../../sass/core/listning.scss */
+.list-best-places .users-been-here .last-item-checkin b {
+  margin-top: 5px;
+  display: block;
+  font-size: 12px;
+}
+/* line 279, ../../sass/core/listning.scss */
+.list-best-places.last-best-place {
+  margin-bottom: 50px;
+}
+/* line 282, ../../sass/core/listning.scss */
+.list-best-places.last-best-place .panorama-mini {
+  margin-right: 2%;
+}
+/* line 287, ../../sass/core/listning.scss */
+.list-best-places .square {
+  width: 48%;
+  float: left;
+  margin-right: 17px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 294, ../../sass/core/listning.scss */
+.list-best-places .square img {
+  width: 100%;
+}
+/* line 299, ../../sass/core/listning.scss */
+.list-best-places .panorama-mini {
+  width: 48%;
+  float: left;
+  margin-bottom: 22px;
+  position: relative;
+  margin-right: 1.5%;
+  overflow: hidden;
+}
+/* line 307, ../../sass/core/listning.scss */
+.list-best-places .panorama-mini img {
+  width: 100%;
+}
+/* line 312, ../../sass/core/listning.scss */
+.list-best-places .panorama-mini .users-been-here img, .list-best-places .panorama-mini .users-been-here .last-item-checkin {
+  width: 30px !important;
+  height: 30px !important;
+  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.5);
+}
+/* line 320, ../../sass/core/listning.scss */
+.list-best-places .grid12 {
+  margin-left: 0 !important;
+}
+/* line 325, ../../sass/core/listning.scss */
+.list-best-places .thumbnail-best-place .thumbnail {
+  width: 24%;
+}
+/* line 330, ../../sass/core/listning.scss */
+.list-best-places .thumbnail {
+  width: 23.5%;
+  float: left;
+  margin-right: 1.2%;
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 337, ../../sass/core/listning.scss */
+.list-best-places .thumbnail img {
+  width: 100%;
+}
+/* line 342, ../../sass/core/listning.scss */
+.list-best-places .thumbnail .users-been-here img, .list-best-places .thumbnail .users-been-here .last-item-checkin {
+  width: 25px !important;
+  height: 25px !important;
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+/* line 348, ../../sass/core/listning.scss */
+.list-best-places .thumbnail .users-been-here a {
+  margin: 0 7px 3px 0;
+}
+/* line 352, ../../sass/core/listning.scss */
+.list-best-places .thumbnail .users-been-here .last-item-checkin {
+  font-weight: 500;
+  font-size: 10px;
+}
+/* line 356, ../../sass/core/listning.scss */
+.list-best-places .thumbnail .users-been-here .last-item-checkin b {
+  margin-top: 2px;
+  display: block;
+  font-size: 7px;
+}
+/* line 364, ../../sass/core/listning.scss */
+.list-best-places .thumbnail:last-child {
+  margin-right: 0px;
+}
+/* line 369, ../../sass/core/listning.scss */
+.list-best-places .last-item {
+  margin-right: 0 !important;
+}
+/* line 376, ../../sass/core/listning.scss */
+.list-best-places .hover-been-here:hover .users-been-here {
+  opacity: 1;
+}
+/* line 384, ../../sass/core/listning.scss */
+.list-best-places .meio-list .square {
+  float: right !important;
+  margin-right: 25px;
+}

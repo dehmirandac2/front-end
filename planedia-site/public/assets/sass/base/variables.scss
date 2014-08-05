@@ -1,0 +1,32 @@
+// Tipografia
+$default_font_size: 16px;
+$colorText: #555555;
+$color_white: #FFF;
+
+// Timeline
+$bg_timeline: #095a66;
+$header_timeline: #05363d;
+
+//Buttons
+$button_background: #91c931;
+$hover_button: #84b62d;
+
+$button_primary: #29a1b2;
+$hover_button_primary: #248e9d;
+
+$button_cancel: #dddddd;
+$button_cancel_hover: #cdcccc;
+$button_color: #777777;
+
+$button_sing_up: #3a589b;
+$button_sing_up_hover: #2a4787;
+
+// Colors
+$blue_clear: #29a1b2;
+$color_pink: #d7267d;
+$color_green: #91c931;
+$blue_marin: #2c3e50;
+$red_error: #f3643c;
+
+// sprite
+$icon-sprite: sprite-map("icos/*.png", $spacing: 16px, $repeat: no-repeat, $layout: vertical);

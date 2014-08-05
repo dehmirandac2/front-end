@@ -1,0 +1,154 @@
+{
+    "success": true,
+    "id": 348,
+    "name": "BrazilJS 2014",
+    "date_start": "2014-08-18",
+    "date_end": "2014-08-24",
+    "days": null,
+    "url": "http://planedia.com/traveler/keppelen/348/braziljs-2014",
+    "places": [
+        {
+            "item_id": 748,
+            "point_id": 5077,
+            "sequence": 1,
+            "place_name": "Porto Alegre",
+            "country_name": "Brazil",
+            "date": null,
+            "url": "http://planedia.com/porto-alegre",
+            "note": "",
+            "points": [
+                {
+                    "item_id": 259,
+                    "id": 3976,
+                    "sequence": 2,
+                    "name": "Museu de Ciências e Tecnologia (PUC)",
+                    "desc": "Transforms the&nbsp; concepts of chemistry, physics and mathematics in play with mirrors , giant cordless phone and even a mild electric shock . The busiest attractions are concentrated on the third floor : the human gyroscope , used in astronaut training , and the imaginary volleyball , in which the shadow of the participants interact with a virtual ball. Very interactive, has about 700 experiments that entertain people of all ages. Stay Tuned,&nbsp;Some things happen by appointment ( and are sometimes paid separately ). This is the case of the Van der Graaf generator, which leaves the hair-raising ( 10.30 and 14.30 free), 3D film about the human body ( 11.15 , 15.30 and 16.30 , R $ 2) and the inflatable planetarium ( 10h , 11h , 15h and 16h, R$ 2). With Genial Passport ( R$ 18) , ticket, shows, 3D movie and visit the planetarium are included. To take some pics, the funniest,&nbsp;upside down in gyroscope and hair standing on Van der Graaf Generator. &nbsp;You circulates alone, but there are monitors around.\r\n",
+                    "type": "poi",
+                    "date": null,
+                    "url": "http://planedia.com/porto-alegre/museu-puc"
+                },
+                {
+                    "item_id": 257,
+                    "id": 3376,
+                    "sequence": 1,
+                    "name": "Fundação Iberê Camargo",
+                    "desc": "The building, designed by the Portuguese &Aacute;lvaro Siza, was awarded the Architecture Biennale in Venice. On the edge of Guaiba, building has four floors connected by ramps that surround the lobby. The collection of the Iberr&ecirc; Camargo Foundation contains over four thousand pieces, Gaucho Iber&ecirc; (1914-1994), presented in exhibitions that change every six months. In other spaces temporary contemporary art exhibitions take place. On days with little movement, a monitor can track you down to the basement, where a studio keeps a German press used by the artist. There are free art workshops for all ages and a charming cafe attached, the Press Caf&eacute;, overlooking the sunset.\r\n",
+                    "type": "poi",
+                    "date": null,
+                    "url": "http://planedia.com/porto-alegre/fundacao-ibere-camargo"
+                }
+            ],
+            "transports": [
+                {
+                    "id": 19,
+                    "sequence": 1,
+                    "type": "flight",
+                    "description": "Gol",
+                    "confirm_number": "BILIJX",
+                    "airplanes": [
+                        {
+                            "sequence": "1",
+                            "flight": "G3 -130",
+                            "airport_from": "CNF",
+                            "airport_to": "CGH",
+                            "flight_date": "2014-08-18",
+                            "flight_time": "07:10:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 20,
+                    "sequence": 2,
+                    "type": "flight",
+                    "description": "Gol Linhas Aereas ( G3 )",
+                    "confirm_number": "BILIJX",
+                    "airplanes": [
+                        {
+                            "sequence": "1",
+                            "flight": "1204",
+                            "airport_from": "CGH",
+                            "airport_to": "POA",
+                            "flight_date": "2014-08-18",
+                            "flight_time": "10:08:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "item_id": 749,
+            "point_id": 5051,
+            "sequence": 2,
+            "place_name": "Gramado",
+            "country_name": "Brazil",
+            "date": null,
+            "url": "http://planedia.com/gramado",
+            "note": "",
+            "points": [
+                {
+                    "item_id": 258,
+                    "id": 2475,
+                    "sequence": 5,
+                    "name": "Parque do Caracol",
+                    "desc": "Headlining the Caracol Park - and the city - is the Caracol Waterfall, with 131 m high, it is the most famous of Rio Grande do Sul, &nbsp;best places to photograph the falls are the gazebo (free) and a panoramic lift (R$ 14), 30 m, from where you have a beautiful 360 &deg; view. To see the waterfall up close, you must descend a steep staircase with about 750 steps in a walk of about 40 minutes. A little train ride (R$ 7), for scenarios that recreate ancient villages of immigrants, it is good program to do with children.\r\n",
+                    "type": "poi",
+                    "date": null,
+                    "url": "http://planedia.com/canela/parque-do-caracol"
+                },
+                {
+                    "item_id": 482,
+                    "id": 222606,
+                    "sequence": 6,
+                    "name": "Snowland - viva a neve",
+                    "desc": "Located in Gramado, in the Serra Ga&uacute;cha, the Snowland is the first indoor snow park in the Americas. That&#39;s right, there&#39;s only other parks covered with real snow in England, Holland, Germany, Dubai, China, New Zealand and South Korea.\r\n\r\nIn addition to being the first on the continent, the Snowland has a peculiarity in relation to other, which are all geared for the practice of sports in the snow. To enter the Park, the visitor takes your imagination to a charming alpine village at the foot of a mountain of snow. An amazing place, where people of all ages have the opportunity to experience the unique feeling of seeing snow for the first time.\r\n\r\nThe Park offers diverse activity in the snow for all ages and tastes, including various attractions in the snow, snow sports (Skiing, Snowboarding, and Airboard) feeding area several shops in alpine village and much more.\r\n\r\nWhether winter or summer, rain or shine, Snowland is guaranteed fun.Viva snow!",
+                    "type": "poi",
+                    "date": null,
+                    "url": "http://planedia.com/gramado/snowland-viva-a-neve"
+                },
+                {
+                    "item_id": 256,
+                    "id": 2506,
+                    "sequence": 4,
+                    "name": "Parque da Cachoeira",
+                    "desc": "The admission to Parque da Cachoeira entitles the waterfall swimming in natural pools formed by the Rio Cara and four trails that lead to the waterfalls and lookouts. The bravest can face the cage, a kind of open cable car that slides by a cable of 250 m long, 70 m high (R$ 25), and the p&ecirc;ndul with a jumping from a bridge of 15 m tall stuck with a cable (R $ 50). In the circuit called radical the cage, abseiling, rock climbing and zip lining are made in sequence (R $ 120). All activities must be scheduled. Entry: 5 royal. 10 reais (January to March and December).\r\n",
+                    "type": "poi",
+                    "date": null,
+                    "url": "http://planedia.com/canela/parque-da-cachoeira"
+                },
+                {
+                    "item_id": 255,
+                    "id": 2541,
+                    "sequence": 3,
+                    "name": "Kur Estação das Águas",
+                    "desc": "Belongs to the medical spa Kurotel, but offers spa packages per day for who is not staying. The party is open to the public over 15 rooms for relaxing and dermatological treatments, and the rainy season, with thermal baths (like sludge and salt, with jets and streams) circuit. Prices for treatments vary between R $ 85 (exfoliation with sea salt) and R $ 365 (pizichilli massage with almond oil).\r\n",
+                    "type": "poi",
+                    "date": null,
+                    "url": "http://planedia.com/gramado/kur-estacao-das-aguas"
+                },
+                {
+                    "item_id": 254,
+                    "id": 2168,
+                    "sequence": 2,
+                    "name": "Roteiros de Agroturismo",
+                    "desc": "Aboard the Princesa, bus 1958, the Journeys of the farm last about four hours. There are three routes: O Quatrilho, leads to scenarios where the book and movie gave rise, and ends with a colonial coffee (R $ 80), the Colonial Roots passes by rural lines Bonita and Nova with visiting a centuries-old house and production Erva Mate (R $ 80), and diving in the Valley, follows the line 28 and passes through a property that cultivates organic, a still and a house of Italian settlers, where they served a typical colonial coffee (value $ 80). Outputs &agrave;s14h opposite the House Colonist.\r\n",
+                    "type": "poi",
+                    "date": null,
+                    "url": "http://planedia.com/gramado/roteiros-de-agroturismo"
+                },
+                {
+                    "item_id": 253,
+                    "id": 2508,
+                    "sequence": 1,
+                    "name": "Mundo a Vapor",
+                    "desc": "It was in the machine shop of their father where Omar and Benito Urbani fell in love by steam engines. The first replicas were built right there: all of them have a full mechanical operation and depict the importance and the applications of steam engines since the industrial revolution. In the world steam, there are replicas of original size and rarities such as the steam clock, which is located in Vancouver, Canada. Price: $ 15\r\n",
+                    "type": "poi",
+                    "date": null,
+                    "url": "http://planedia.com/canela/mundo-a-vapor"
+                }
+            ],
+            "transports": []
+        }
+    ],
+    "user_has_permission": true,
+    "user_is_owner": true
+}
